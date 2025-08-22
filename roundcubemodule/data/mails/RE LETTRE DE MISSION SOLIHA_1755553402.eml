@@ -1,0 +1,513 @@
+Return-Path: <m.beucler@certif-finances.fr>
+Delivered-To: pierre.naitali@accens-avocats.com
+Received: from sucralose.o2switch.net
+	by sucralose.o2switch.net with LMTP
+	id APmzOeo2o2jQTwQAkS4Gvg
+	(envelope-from <m.beucler@certif-finances.fr>)
+	for <pierre.naitali@accens-avocats.com>; Mon, 18 Aug 2025 16:21:30 +0200
+Return-path: <m.beucler@certif-finances.fr>
+Envelope-to: pierre.naitali@accens-avocats.com
+Delivery-date: Mon, 18 Aug 2025 16:21:30 +0200
+Received: from mail-francesouthazon11020078.outbound.protection.outlook.com ([52.101.165.78]:44005 helo=MRZP264CU002.outbound.protection.outlook.com)
+	by sucralose.o2switch.net with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.98.2)
+	(envelope-from <m.beucler@certif-finances.fr>)
+	id 1uo0js-00000001IZV-0ClC
+	for pierre.naitali@accens-avocats.com;
+	Mon, 18 Aug 2025 16:21:30 +0200
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=LABvdvWXNw81XabcDJoinUbDFpCtzTlsCEz0ugMUHYsTZ8Zf9JRqknEUhLi5kO2I9J7YUf4dS+PWrJ1V2YO1+esT/GNfLA8NB0rFGfyGlTbfCWrjVeAFcxmHQQWNzQd9VgRvbzjka5psNmXNDO9nmJolVx0SkyjY24RdeEW0CRDpb9GkdxrwxRSAyFADp6RLY3hclyADpMOYQlZmt1DjWf+oebWnFZIRf0Inf9NPx9WyZWxJdzo65XCisGKmKyuWs59Oh8yJRoiAMeV9dR7wlpS51pUiiZWODcPaqxQGWJ1oUa1Pz9u8tOynVetu/5NzVwVHszWhBSj+UfHW8UJ5HQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=/qaQH60JAXMyrhTA2vW1mJpczJ1fE4HmFkNjqfjKqaA=;
+ b=jg/A14fjkphdaG6JGvXmGcG4h+j68LYCWmxPBftEHtQaY0V/9e0S7rc+4ZOWY3ktIFbYwefV3DeFhGa/fdhslaLw7524f8OtmlRBZaZItxkJeZOSVJHpO9U/dTU0n6bg7UAxf80iw4rC1LkRDjwnR4NPR4w6QAlugSG6m+aoiGBpBT8f3JqwC8iXYW0gzeZeHdlWJXQFnYoSv1YTGrZWtWwT58bNPcH/R1JjZrGz/XBSSLloc3kpHyVhNF78X2fsQqFo0ASUcvTU4dDqyyXNOiXaYC7Ns73USniRpy9zps+1RWNQcOSrYltcJAKFd5LW9Jamr0LuJPbB7KF5TPKxog==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=certif-finances.fr; dmarc=pass action=none
+ header.from=certif-finances.fr; dkim=pass header.d=certif-finances.fr;
+ arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=certif-finances.fr;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=/qaQH60JAXMyrhTA2vW1mJpczJ1fE4HmFkNjqfjKqaA=;
+ b=07MGVO1Zo0FuZpgRYz2hq4aw23TkICY5L6Jb9ZaH3Btm/kXu3Qj7GsChmvo3qJAs4kPub9w0qhPi+OZzrPIGIlQpKyLsGJA119vqgm3KL8Y9cBbk+3MseGX5AouetGBD4CmYUPZE3tv2syQaxUm0X7gct2Eqnqa1h0jD6gpaj/WR+GxRFaK1XLaJcujdeqXmZEp5GnZnLKjtlApkORMOJxiYhjiRyxCZ8FdS8o9pcmoP4fQo2LEQSTW0cYmVd4xeKyNNLsifmz6ZLs8zxoWPCc0Aj3iexWUlam30akG3LsBJaL241RcUtKQIDgFIxgpNjsE/fzL+FBb08/YiLZaZfA==
+Received: from PA3PPFF7FDD5F7F.FRAP264.PROD.OUTLOOK.COM (2603:10a6:108:1::6aa)
+ by MR1PPF375D3D4D7.FRAP264.PROD.OUTLOOK.COM (2603:10a6:508:1::21c) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9052.12; Mon, 18 Aug
+ 2025 14:20:45 +0000
+Received: from PA3PPFF7FDD5F7F.FRAP264.PROD.OUTLOOK.COM
+ ([fe80::ec2f:1fa7:f454:7d8b]) by PA3PPFF7FDD5F7F.FRAP264.PROD.OUTLOOK.COM
+ ([fe80::ec2f:1fa7:f454:7d8b%6]) with mapi id 15.20.9052.011; Mon, 18 Aug 2025
+ 14:20:45 +0000
+From: "Michel  Beucler" <m.beucler@certif-finances.fr>
+To: "pierre.naitali@accens-avocats.com" <pierre.naitali@accens-avocats.com>
+CC: Mohamed BOUZDOU <m.bouzdou@certif-finances.fr>
+Subject: RE: LETTRE DE MISSION SOLIHA
+Thread-Topic: LETTRE DE MISSION SOLIHA
+Thread-Index: AdspCb5WgjosnCTYQ/iaweb8r5F0BTnQNaeA
+Date: Mon, 18 Aug 2025 14:20:45 +0000
+Message-ID:
+ <PA3PPFF7FDD5F7F0BBE6B5F6BC67148972AD031A@PA3PPFF7FDD5F7F.FRAP264.PROD.OUTLOOK.COM>
+References:
+ <MR2P264MB0068321475ECDB4ED66558FAD04A2@MR2P264MB0068.FRAP264.PROD.OUTLOOK.COM>
+In-Reply-To:
+ <MR2P264MB0068321475ECDB4ED66558FAD04A2@MR2P264MB0068.FRAP264.PROD.OUTLOOK.COM>
+Accept-Language: fr-FR, en-US
+Content-Language: fr-FR
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=certif-finances.fr;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: PA3PPFF7FDD5F7F:EE_|MR1PPF375D3D4D7:EE_
+x-ms-office365-filtering-correlation-id: cec7cd34-8096-464e-dfc9-08ddde626bda
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam:
+ BCL:0;ARA:13230040|376014|1800799024|366016|38070700018|7053199007|4013099003|4053099003|8096899003;
+x-microsoft-antispam-message-info:
+ =?iso-8859-1?Q?GITi+9tcbYWTUmbBY3zSe4BLrlReadU/fP1IjnRaKfLviRMSxQk3xqzP8G?=
+ =?iso-8859-1?Q?9nurcVHr7CGdSRI813QBCMvCfRy6d5SJ7J72NqqRqURUJ8liCobud0WXLc?=
+ =?iso-8859-1?Q?ta4EeBZRHupn2OCfCEDh1iI17paml3a7o2vIB00Ek5FepEQBvHYTQmXtBb?=
+ =?iso-8859-1?Q?jR2+jcoVMYLKrS5UijEmhicglOlWRvH3jC5Y3e3CQxl14+cMurU+UuuXHa?=
+ =?iso-8859-1?Q?EUtLJN8v9GNJnWwNSoscg9DVQBRQydHDaCdJofSQV3KmXG00uX+hCy8Tt7?=
+ =?iso-8859-1?Q?1QBDoMKuq0ErNHUHRP6Eo+S192eTkuYXI9gYUJfR16vc4T/xvExHaskYQ0?=
+ =?iso-8859-1?Q?Cf9lCxsuoGAf579RkRdznnQw8HRF+Q71U/GOtzXYNbyFUl9gMqW/78nmeF?=
+ =?iso-8859-1?Q?SBa4Vqdl8eBfgUrb1U97Lyxwo63zewOroaimv3CHcaTwwQfXlJSjPA11VO?=
+ =?iso-8859-1?Q?4MqWa2GEyYG3VX2uaZMP+cmkw7w63OGlJlPmHNZGovwpHUaeOHYKYnC5O5?=
+ =?iso-8859-1?Q?idbaeWWNoaw8/56T3LEI6cUo/5FwwwVqq5d0lJ4AdrIjYnmfEAeJHyZJzd?=
+ =?iso-8859-1?Q?ISK+zVS4CMohRDPxKuiZJbHSo0dOFovqmF3SRLD/VtkM5Zj0C3SPu+yYms?=
+ =?iso-8859-1?Q?4vy249T6uMn/OVICsG2jQF/ZsQJ3qq598CqE2HZUYRJzzMnSCccp3z+0Rz?=
+ =?iso-8859-1?Q?dPd5+ALQTkkVgG8pZH3zchtb9S1YL6xC8P1I8Mow7ztiEsjuaEtV7eJ+hm?=
+ =?iso-8859-1?Q?hjqi8ot0zoW/4O+yXaL8hy2n2ZYWOKDV0me2r9s5FGEJR9uUVX7tYA/fUa?=
+ =?iso-8859-1?Q?16e3SfBBofXlD1IXXuWPnniPAw3jlHAf6rZxf8P1edwzl4eOnBgSLZLW+i?=
+ =?iso-8859-1?Q?KFlSatez5IvUoeGbp4czC/3L2xjCUpEM3WHCfhNXOO2yosRn2Pz439S+4T?=
+ =?iso-8859-1?Q?kaXkcOQjRJLwRETy18sLuODq4bpR1/kboyozTZrCutBw77VLwi4bt1BNjC?=
+ =?iso-8859-1?Q?7QMH71VA0V082WXGvgRj6ZAFpHbzMaJh8rOpN3bJZs4CoLYyVbEDYhS4oe?=
+ =?iso-8859-1?Q?hySJt+dNBn9HkncIeUdWviJihRJahu4YETYdetkNasVjBAWBPqYf72DRbp?=
+ =?iso-8859-1?Q?1L5GHcTsXIf7Y9N0EamKA2V3b2XTDe0+ydhKivyUyb5Ut6+zG0EP+ZWjaY?=
+ =?iso-8859-1?Q?qAzH4FxdXfgQV/R69BxloTMlt4QAYlL+ldxoXgV5Ac6uCzDdtnknzOIKMA?=
+ =?iso-8859-1?Q?3j/NCfuV55SBTI998mIlX9SP0KgZuhTGx5Oet8Z8cGbMOKCPjzDkXDLeFF?=
+ =?iso-8859-1?Q?IyCojNIfiRnZhE9IdBxNLotPs0/zwW6Lt9BriUhd6yPKcorHo5G2zU+xLo?=
+ =?iso-8859-1?Q?63h7LE7sLRqK+QBTiuX6Ivsqgm13hXDBdQ0fnIWlWQwqxlJOpYF6qpGTnj?=
+ =?iso-8859-1?Q?RhpFCCURJZpia5tR7QLSsSwODe+nldsot9nlG/bS47l94xtfwF0mYkBtXL?=
+ =?iso-8859-1?Q?jNZ7aaG20Xjd8t3uD6HSAqkiOpmpDlPdB0Y4MjUcU5s7UjoWceLwdsyNH3?=
+ =?iso-8859-1?Q?xB8VnRo=3D?=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:fr;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:PA3PPFF7FDD5F7F.FRAP264.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(13230040)(376014)(1800799024)(366016)(38070700018)(7053199007)(4013099003)(4053099003)(8096899003);DIR:OUT;SFP:1102;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?iso-8859-1?Q?exbdRi62KCOGcI0H4zj/sYERU+w4Dn4A3WeekotUn507/byfBZWLCuOklB?=
+ =?iso-8859-1?Q?br3GOEqCPM/6zdyzPWh9bJe6WmXCZ5xdXQ77jC2p0tWp9br59P5FcSxTIc?=
+ =?iso-8859-1?Q?fiGnBM8MzNTmfOzI5y2gZXJK6tga2cIpXUX2a1zAXJAoTXNtkv3OQ3CLSk?=
+ =?iso-8859-1?Q?Z4A7DBp/6Tws/UyWKX5ioif3jlwh025iRUW2jOFiJD/U6yIfeamscMCqi6?=
+ =?iso-8859-1?Q?caYYMSGXOIj0GKJ8gV/jZBp4aoWxCpYcdJ23ymbNoY95JAFWPV1Cflh/a9?=
+ =?iso-8859-1?Q?tdFapnLfBV32IJ7bg5I/yTUxsdiXu9fBXYJOVg2F6QcHW6IaTDcSMZyqty?=
+ =?iso-8859-1?Q?5hVr88jvv7bzzsQUB3vMjsntThybALoUrknIOgLS91+mFMgDJNZM2UYdPN?=
+ =?iso-8859-1?Q?CWv8Z0HpklCi0nkcFygeZ2U84LN7hTEH0nokSCYeopdN5sHBdrQa7Zm4Br?=
+ =?iso-8859-1?Q?40FGg5kN9tl+4C1ET82r05qxkeCdtyA4RPk4tn+aKCIKWOUT4N2tTzoTNN?=
+ =?iso-8859-1?Q?kthj5CeApdx/fOCvNh1UEbBhKrLj0LCWkfD4Cc0cinq3mhsSldnLGyauK9?=
+ =?iso-8859-1?Q?VdzwlkbrUuDswF9wu7IUeowXh7SEuUwYSD+ywZRI7M0IWcuNDjzHQlHwJ1?=
+ =?iso-8859-1?Q?SzCVQV/gABCc63lzVJq/rliFoFqaSfphcTXwBs4iXD3qb5Y1sNQe9/mgXj?=
+ =?iso-8859-1?Q?+C3mIW7GFqC0OJBVheqewWtk+hlzsMTfADxYXeyBazo0GJsg7Pl6L2hSnU?=
+ =?iso-8859-1?Q?zG019fI+e2Utgi/wHlK3NDpwicq9kVOK1XM+WrimnTI6Yd+s6STBv4pcNb?=
+ =?iso-8859-1?Q?/ufzxi6fv9PhFw2ugAYOdGV/GSNJG61/LHYSqZCmPrKitAEJkoOLkTbY4f?=
+ =?iso-8859-1?Q?xBlh9YuEB8Hpw4SD0/Rl8AONrBlat3v2wvLGIQwztewqtFSWyPzP7RcGCQ?=
+ =?iso-8859-1?Q?cxB5JFb7ka+Xzi0Zj6rFSfsBxjNBl5Qn9u6wFfugrmGEUXAEcv8AU2GamQ?=
+ =?iso-8859-1?Q?VX39XYOkGFeaw40Ol73NO253NJ1s5dhQzcw4EIzAnrRGgMUNSO8s/I/lb2?=
+ =?iso-8859-1?Q?OpoWz6ceTSZNfZ0aiQTykjy6BrmTqtNjjmB46r/FSWTUtS6au67ihpKL2V?=
+ =?iso-8859-1?Q?MlFZJxoXyT5OEKjFNDPmYWoAt7ZD8gv+15oahalodau7Uf/GrXz7fuQvUY?=
+ =?iso-8859-1?Q?/qmbnLf//0Lxbymkj0g51PnORDJGOJuXRilbP92YZ9QCtOLreCPKxg7McR?=
+ =?iso-8859-1?Q?o4x53hK86Hug2Mn2HTDJdUQCtqJRjFCekMCbzeqomcEe1iZ2/FAh8AYiOc?=
+ =?iso-8859-1?Q?M92MjxH4LUQ2evUbT9GW1DQXB653rhwBkUwbBVPQlJOMI0yRyToV9cJKoH?=
+ =?iso-8859-1?Q?qMfveVO6BHKpUrBNL3DLpF+HXOXN/iWZPtKjYIF4CwOe42jWVd5VHwAJMQ?=
+ =?iso-8859-1?Q?itFqEmpyNgMc7I5NQW5OmzdX0HYVic6OqDImRAiC0DY4iBybjwu5sv7L8l?=
+ =?iso-8859-1?Q?QbawlVL/vZVmoiC3iStpxG9kNcy+zuUmacz8MVOubt6HyELPBRpNCLrzs+?=
+ =?iso-8859-1?Q?0NZjBPPkJtU5y3FMZvec9dB/1RBGfr/QRENgLKg3X+2niywUfbZUMIbMD0?=
+ =?iso-8859-1?Q?0B3nQ4TFd10ZM7RATqx+BQSr++EHRMJpSqCfp1O9xBT14RfXbzQD3/KA?=
+ =?iso-8859-1?Q?=3D=3D?=
+Content-Type: multipart/related;
+	boundary="_004_PA3PPFF7FDD5F7F0BBE6B5F6BC67148972AD031APA3PPFF7FDD5F7F_";
+	type="multipart/alternative"
+MIME-Version: 1.0
+X-OriginatorOrg: certif-finances.fr
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: PA3PPFF7FDD5F7F.FRAP264.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-Network-Message-Id: cec7cd34-8096-464e-dfc9-08ddde626bda
+X-MS-Exchange-CrossTenant-originalarrivaltime: 18 Aug 2025 14:20:45.3619
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: c1981670-3e92-4aa8-bede-8424424512a5
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: eAVVwv8/6SL/qEfoXMxTLtuS8cs6KNN+J6a/7KnNFfgcUDLdbEFTHVwQs0AZ2KknWOGXJ89e4ss0liRgSF9cdrqKuZ95egt5TWdMYDMb2dw=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MR1PPF375D3D4D7
+
+--_004_PA3PPFF7FDD5F7F0BBE6B5F6BC67148972AD031APA3PPFF7FDD5F7F_
+Content-Type: multipart/alternative;
+	boundary="_000_PA3PPFF7FDD5F7F0BBE6B5F6BC67148972AD031APA3PPFF7FDD5F7F_"
+
+--_000_PA3PPFF7FDD5F7F0BBE6B5F6BC67148972AD031APA3PPFF7FDD5F7F_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour Pierre,
+
+J'esp=E8re que les cong=E9s se sont bien pass=E9s. Est que demain il y a un=
+e viso pour SOLIHA ?
+
+Bien cordialement
+
+Michel Beucler
+* : 06 79 31 93 61
+* : m.beucler@certif-finances.fr<mailto:m.beucler@certif-finances.fr>
+[cid:image001.jpg@01DC105B.D858D140]
+Les informations contenues dans ce courrier =E9lectronique et les pi=E8ces =
+=E9ventuellement jointes sont strictement confidentielles, sont couvertes e=
+t prot=E9g=E9es par le secret professionnel pr=E9vu et sanctionn=E9 par les=
+ dispositions de l'article 226-13 et suivants du code p=E9nal fran=E7ais et=
+ sont =E0 l'usage exclusif de son ou ses destinataires. Si vous avez re=E7u=
+ ce message par erreur, nous vous remercions d'en informer imm=E9diatement =
+l'exp=E9diteur au 06 79 31 93 61 et de l'effacer ainsi que ses pi=E8ces joi=
+ntes sans les lire, les copier, les enregistrer ou les divulguer de quelque=
+ mani=E8re que ce soit.
+
+
+
+De : Michel Beucler
+Envoy=E9 : lundi 28 octobre 2024 08:22
+=C0 : pierre.naitali@accens-avocats.com
+Objet : LETTRE DE MISSION SOLIHA
+
+Bonjour Pierre,
+
+Comme convenu, ci-joint la lettre de mission. Je vous remercie de me faire =
+part de vos =E9ventuelles observations.
+
+Bonne journ=E9e,
+
+Michel Beucler
+* : 06 79 31 93 61
+* : m.beucler@certif-finances.fr<mailto:m.beucler@certif-finances.fr>
+[cid:image001.jpg@01DC105B.D858D140]
+Les informations contenues dans ce courrier =E9lectronique et les pi=E8ces =
+=E9ventuellement jointes sont strictement confidentielles, sont couvertes e=
+t prot=E9g=E9es par le secret professionnel pr=E9vu et sanctionn=E9 par les=
+ dispositions de l'article 226-13 et suivants du code p=E9nal fran=E7ais et=
+ sont =E0 l'usage exclusif de son ou ses destinataires. Si vous avez re=E7u=
+ ce message par erreur, nous vous remercions d'en informer imm=E9diatement =
+l'exp=E9diteur au 06 79 31 93 61 et de l'effacer ainsi que ses pi=E8ces joi=
+ntes sans les lire, les copier, les enregistrer ou les divulguer de quelque=
+ mani=E8re que ce soit.
+
+
+--_000_PA3PPFF7FDD5F7F0BBE6B5F6BC67148972AD031APA3PPFF7FDD5F7F_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ligatures:standardcontextual;
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#467886;
+	text-decoration:underline;}
+span.EmailStyle19
+	{mso-style-type:personal-reply;
+	font-family:"Aptos",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;
+	mso-ligatures:none;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"FR" link=3D"#467886" vlink=3D"#96607D" style=3D"word-wrap:bre=
+ak-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Bonjour Pierre, <o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">J&#8217;esp=E8re que les cong=E9s se sont bien pass=
+=E9s. Est que demain il y a une viso&nbsp;pour SOLIHA&nbsp;?<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Bien cordialement <o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-family:&quot;Calibri&quot;,sa=
+ns-serif;mso-ligatures:none;mso-fareast-language:FR">Michel Beucler<o:p></o=
+:p></span></b></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:Wingding=
+s;color:#5F5F5F;mso-ligatures:none;mso-fareast-language:FR">)</span><span s=
+tyle=3D"font-size:10.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#=
+5F5F5F;mso-ligatures:none;mso-fareast-language:FR">
+</span><span style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-s=
+erif;color:#5F5F5F;mso-ligatures:none;mso-fareast-language:FR">: 06 79 31 9=
+3 61&nbsp;
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:Wingding=
+s;color:#5F5F5F;mso-ligatures:none;mso-fareast-language:FR">:</span><span s=
+tyle=3D"font-size:10.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#=
+5F5F5F;mso-ligatures:none;mso-fareast-language:FR">
+</span><span style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-s=
+erif;color:#5F5F5F;mso-ligatures:none;mso-fareast-language:FR">:
+</span><span style=3D"font-family:&quot;Calibri&quot;,sans-serif;mso-ligatu=
+res:none;mso-fareast-language:FR"><a href=3D"mailto:m.beucler@certif-financ=
+es.fr"><span style=3D"color:#0563C1">m.beucler@certif-finances.fr</span></a=
+>
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Calibri&quot;,sans-=
+serif;mso-ligatures:none;mso-fareast-language:FR"><img border=3D"0" width=
+=3D"180" height=3D"90" style=3D"width:1.875in;height:.9375in" id=3D"_x0000_=
+i1026" src=3D"cid:image001.jpg@01DC105B.D858D140"><o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:12.0pt"><b><span style=3D"fon=
+t-size:8.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:black;mso-lig=
+atures:none;mso-fareast-language:FR">Les informations contenues dans ce cou=
+rrier =E9lectronique et les pi=E8ces =E9ventuellement
+ jointes sont strictement confidentielles, sont couvertes et prot=E9g=E9es =
+par le secret professionnel pr=E9vu et sanctionn=E9 par les dispositions de=
+ l'article 226-13 et suivants du code p=E9nal fran=E7ais et sont =E0 l'usag=
+e exclusif de son ou ses destinataires. Si vous
+ avez re=E7u ce message par erreur, nous vous remercions d'en informer imm=
+=E9diatement l'exp=E9diteur au 06 79 31 93 61 et de l'effacer ainsi que ses=
+ pi=E8ces jointes sans les lire, les copier, les enregistrer ou les divulgu=
+er de quelque mani=E8re que ce soit.</span></b><span style=3D"font-family:&=
+quot;Calibri&quot;,sans-serif;mso-ligatures:none;mso-fareast-language:FR"><=
+o:p></o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0cm =
+0cm 0cm">
+<p class=3D"MsoNormal"><b><span style=3D"font-family:&quot;Calibri&quot;,sa=
+ns-serif;mso-ligatures:none;mso-fareast-language:FR">De&nbsp;:</span></b><s=
+pan style=3D"font-family:&quot;Calibri&quot;,sans-serif;mso-ligatures:none;=
+mso-fareast-language:FR"> Michel Beucler
+<br>
+<b>Envoy=E9&nbsp;:</b> lundi 28 octobre 2024 08:22<br>
+<b>=C0&nbsp;:</b> pierre.naitali@accens-avocats.com<br>
+<b>Objet&nbsp;:</b> LETTRE DE MISSION SOLIHA<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Bonjour Pierre, <o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Comme convenu, ci-joint la lettre de mission. Je vou=
+s remercie de me faire part de vos =E9ventuelles observations.<o:p></o:p></=
+p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Bonne journ=E9e,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-family:&quot;Calibri&quot;,sa=
+ns-serif;mso-ligatures:none;mso-fareast-language:FR">Michel Beucler<o:p></o=
+:p></span></b></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:Wingding=
+s;color:#5F5F5F;mso-ligatures:none;mso-fareast-language:FR">)</span><span s=
+tyle=3D"font-size:10.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#=
+5F5F5F;mso-ligatures:none;mso-fareast-language:FR">
+</span><span style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-s=
+erif;color:#5F5F5F;mso-ligatures:none;mso-fareast-language:FR">: 06 79 31 9=
+3 61&nbsp;
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:Wingding=
+s;color:#5F5F5F;mso-ligatures:none;mso-fareast-language:FR">:</span><span s=
+tyle=3D"font-size:10.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#=
+5F5F5F;mso-ligatures:none;mso-fareast-language:FR">
+</span><span style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-s=
+erif;color:#5F5F5F;mso-ligatures:none;mso-fareast-language:FR">:
+</span><span style=3D"font-family:&quot;Calibri&quot;,sans-serif;mso-ligatu=
+res:none;mso-fareast-language:FR"><a href=3D"mailto:m.beucler@certif-financ=
+es.fr"><span style=3D"color:#0563C1">m.beucler@certif-finances.fr</span></a=
+>
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Calibri&quot;,sans-=
+serif;mso-ligatures:none;mso-fareast-language:FR"><img border=3D"0" width=
+=3D"180" height=3D"90" style=3D"width:1.875in;height:.9375in" id=3D"Image_x=
+0020_3" src=3D"cid:image001.jpg@01DC105B.D858D140"></span><span style=3D"fo=
+nt-family:&quot;Calibri&quot;,sans-serif;mso-ligatures:none;mso-fareast-lan=
+guage:FR"><o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:12.0pt"><b><span style=3D"fon=
+t-size:8.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:black;mso-lig=
+atures:none;mso-fareast-language:FR">Les informations contenues dans ce cou=
+rrier =E9lectronique et les pi=E8ces =E9ventuellement
+ jointes sont strictement confidentielles, sont couvertes et prot=E9g=E9es =
+par le secret professionnel pr=E9vu et sanctionn=E9 par les dispositions de=
+ l'article 226-13 et suivants du code p=E9nal fran=E7ais et sont =E0 l'usag=
+e exclusif de son ou ses destinataires. Si vous
+ avez re=E7u ce message par erreur, nous vous remercions d'en informer imm=
+=E9diatement l'exp=E9diteur au 06 79 31 93 61 et de l'effacer ainsi que ses=
+ pi=E8ces jointes sans les lire, les copier, les enregistrer ou les divulgu=
+er de quelque mani=E8re que ce soit.</span></b><span style=3D"font-family:&=
+quot;Calibri&quot;,sans-serif;mso-ligatures:none;mso-fareast-language:FR"><=
+o:p></o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_PA3PPFF7FDD5F7F0BBE6B5F6BC67148972AD031APA3PPFF7FDD5F7F_--
+
+--_004_PA3PPFF7FDD5F7F0BBE6B5F6BC67148972AD031APA3PPFF7FDD5F7F_
+Content-Type: image/jpeg; name="image001.jpg"
+Content-Description: image001.jpg
+Content-Disposition: inline; filename="image001.jpg"; size=6501;
+	creation-date="Mon, 18 Aug 2025 14:20:45 GMT";
+	modification-date="Mon, 18 Aug 2025 14:20:45 GMT"
+Content-ID: <image001.jpg@01DC105B.D858D140>
+Content-Transfer-Encoding: base64
+
+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
+P//Z
+
+--_004_PA3PPFF7FDD5F7F0BBE6B5F6BC67148972AD031APA3PPFF7FDD5F7F_--

@@ -1,0 +1,77 @@
+Return-Path: <accens@3cxbylemnia.com>
+Delivered-To: pierre.naitali@accens-avocats.com
+Received: from sucralose.o2switch.net
+	by sucralose.o2switch.net with LMTP
+	id iBLNC9xFoWgGXBEAkS4Gvg
+	(envelope-from <accens@3cxbylemnia.com>)
+	for <pierre.naitali@accens-avocats.com>; Sun, 17 Aug 2025 05:00:44 +0200
+Return-path: <accens@3cxbylemnia.com>
+Envelope-to: pierre.naitali@accens-avocats.com
+Delivery-date: Sun, 17 Aug 2025 05:00:44 +0200
+Received: from node2.promail.space ([5.196.101.24]:49028)
+	by sucralose.o2switch.net with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.98.2)
+	(envelope-from <accens@3cxbylemnia.com>)
+	id 1unTdU-00000004udy-1IVa
+	for pierre.naitali@accens-avocats.com;
+	Sun, 17 Aug 2025 05:00:44 +0200
+Received: from [127.0.0.1] (localhost [127.0.0.1]) by localhost (Mailerdaemon) with ESMTPSA id 0A659EBC99
+	for <pierre.naitali@accens-avocats.com>; Sun, 17 Aug 2025 05:00:00 +0200 (CEST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=3cxbylemnia.com;
+	s=dkim; t=1755399601; h=from:subject:date:message-id:to:mime-version:content-type:
+	 content-transfer-encoding; bh=iP+QWb4oeehMTF9v8mf0pewgXOb/d/FrvenZ+R//UyY=;
+	b=ZXUzSjhZPRs88DU4gsZb8gGSn0LWKG1u6IesnmVAvK8faCN0uiiMfQnEmQZrZIBkmfl870
+	cdTcMQNKtE4FyoMhIzVCZ0pP9RBzST5avRiA59W3hXRNTLCwweIFtolIJXShfdbTuNhWwI
+	MfHaNY79tLxcNNjYgyeQ2H7AgTi6t9u5X7kbc6mwybVv7TAsXMAUdy7hjPLZcoqU6L1L5C
+	UE0Cwz5dDySVOcB4RFsc+2Zlee0YKltruCJSNlhMc+m1er+DSCVvfr4vl5SG7t1ePZj24u
+	4b0mTlevaq0VWfex/4aw3T+01sqHOXHRQUEeslUBWQv+qECBf6+OTqus84VuEA==
+From: accens@3cxbylemnia.com
+Date: Sun, 17 Aug 2025 05:00:00 +0200
+Subject: Votre rapport 3CX Rapport Hebdo - Commercial est =?utf-8?b?cHLDqnQ=?=
+Message-Id: <UYITRHHOYQU4.LKRHC893HQDF1@3cx>
+To: "pierre.naitali@accens-avocats.com" <pierre.naitali@accens-avocats.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 8bit
+X-Last-TLS-Session-Version: TLSv1.2
+
+
+<!doctype html>
+<html>
+<head>
+
+<style>
+        body{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size:14px;
+        }
+</style>
+<title>Call Reports Email</title>
+</head>
+<body>
+<div style="text-align:center">
+<table style="max-width:500px; height:auto;text-align:left;">
+  <tbody>
+    <tr>
+     <td>
+                <div>
+                        <p><strong>Objet :</strong> &nbsp; Votre rapport 3CX Rapport Hebdo - Commercial est prêt <br>
+                        
+                                Votre rapport d'appels - Rapport Hebdo - Commercial est prêt à être téléchargé.  
+                        </p>                        
+                        
+                        
+                        
+                                <p>Téléchargez votre rapport depuis <a href="https://lemtel144.my3cx.fr:5001/management/Reports/RapportHebdoCommercial_1708_y1f9w2rqs1PklIbqj4dF.html" target="_blank">ici</a>.</p>
+                        
+                        
+                        
+                        
+                </div>
+      </td> 
+    </tr>
+  </tbody>
+</table>
+</div>
+</body>
+</html>

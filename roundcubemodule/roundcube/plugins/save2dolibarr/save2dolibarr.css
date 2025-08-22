@@ -1,0 +1,372 @@
+/**
+ * Styles pour le plugin save2dolibarr
+ * Thème "Classer dans Dolibarr"
+ */
+
+/* Bouton dans la toolbar avec icône personnalisée */
+.toolbar a.button.save2dolibarr {
+    background: linear-gradient(135deg, #f07c00 0%, #ff9a00 100%);
+    color: white !important;
+    border: 1px solid #e06c00;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.toolbar a.button.save2dolibarr:hover {
+    background: linear-gradient(135deg, #ff9a00 0%, #f07c00 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(240, 124, 0, 0.3);
+}
+
+.toolbar a.button.save2dolibarr:before {
+    content: "🗂";
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+/* Modal amélioré avec nouvelle ergonomie */
+#save2dolibarr_modal {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+}
+
+#save2dolibarr_modal h3 {
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #333;
+}
+
+/* Styles pour l'interface simplifiée sans cases à cocher */
+.module-row {
+    transition: all 0.3s ease;
+}
+
+.module-row:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.module-row input[type="text"] {
+    transition: all 0.2s ease;
+}
+
+.module-row input[type="text"]:focus {
+    outline: none;
+    border-color: #2196f3 !important;
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
+}
+
+/* États visuels selon les codes couleurs */
+.module-row input[type="text"]:focus {
+    border-color: #2196f3 !important; /* Bleu pendant la recherche */
+}
+
+/* États des lignes de modules */
+.module-row[data-state="searching"] {
+    background: #e3f2fd !important;
+    border-color: #2196f3 !important;
+}
+
+.module-row[data-state="valid"] {
+    background: #e8f5e9 !important;
+    border-color: #4caf50 !important;
+}
+
+.module-row[data-state="invalid"] {
+    background: #ffebee !important;
+    border-color: #f44336 !important;
+}
+
+.module-row[data-state="warning"] {
+    background: #fff8e1 !important;
+    border-color: #ff9800 !important;
+}
+
+/* Listes déroulantes de suggestions */
+[id^="suggestions_"] {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+    border-color: #f07c00 !important;
+    background: white !important;
+    border: 1px solid #ddd !important;
+    border-top: none !important;
+    border-radius: 0 0 4px 4px !important;
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1000 !important;
+    max-height: 200px !important;
+    overflow-y: auto !important;
+}
+
+[id^="suggestions_"] div {
+    color: #333 !important;
+    background: white !important;
+    border: none !important;
+}
+
+[id^="suggestions_"] div:hover {
+    background: #f0f7ff !important;
+}
+
+[id^="suggestions_"] div:last-child {
+    border-bottom: none !important;
+}
+
+/* S'assurer que les conteneurs de recherche ont position: relative */
+.module-row > div:nth-child(3) {
+    position: relative !important;
+}
+
+/* Animation de chargement pour les status */
+.module-row .loading-spinner {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #f07c00;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* États des status */
+.module-row span[id^="status_"] {
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+/* Boutons du modal */
+#save2dolibarr_submit {
+    background: linear-gradient(135deg, #f07c00 0%, #ff9a00 100%) !important;
+    transition: all 0.3s ease !important;
+}
+
+#save2dolibarr_submit:hover {
+    background: linear-gradient(135deg, #ff9a00 0%, #f07c00 100%) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(240, 124, 0, 0.3) !important;
+}
+
+#save2dolibarr_submit_only {
+    background: linear-gradient(135deg, #1565c0 0%, #1976d2 100%) !important;
+    transition: all 0.3s ease !important;
+}
+
+#save2dolibarr_submit_only:hover {
+    background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(21, 101, 192, 0.3) !important;
+}
+
+#save2dolibarr_close {
+    transition: all 0.3s ease !important;
+}
+
+#save2dolibarr_close:hover {
+    background: #616161 !important;
+    transform: translateY(-1px);
+}
+
+/* Checkbox des modules avec style Dolibarr */
+#active_modules_checkbox_container input[type="checkbox"] {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+#active_modules_checkbox_container label {
+    cursor: pointer;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    background: white;
+    color: #333;
+}
+
+#active_modules_checkbox_container label:hover {
+    background: #f8f9fa;
+    border-color: #f07c00;
+}
+
+#active_modules_checkbox_container input[type="checkbox"]:checked + span {
+    font-weight: 500;
+}
+
+/* Champs de recherche */
+.target-search-input, 
+#target_inputs_container input[type="text"] {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    margin-top: 5px;
+    color: #333;
+}
+
+.target-search-input:focus, 
+#target_inputs_container input[type="text"]:focus {
+    outline: none;
+    border-color: #f07c00;
+    box-shadow: 0 0 0 3px rgba(240, 124, 0, 0.1);
+}
+
+/* Suggestions */
+#target_suggestions {
+    animation: slideDown 0.3s ease;
+    color: #333;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    transition: background 0.2s ease;
+    color: #333;
+}
+
+.suggestion-item:hover {
+    background: #fff4e6;
+}
+
+.suggestion-item.selected {
+    background: #f07c00;
+    color: white;
+}
+
+/* Badge pour le statut du tiers */
+#sender_info {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #333;
+}
+
+#sender_info.found {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #4caf50;
+}
+
+#sender_info.not-found {
+    background: #fff3e0;
+    color: #e65100;
+    border: 1px solid #ff9800;
+}
+
+/* Animation de chargement */
+.loading-spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #f07c00;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-left: 8px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Overlay amélioré */
+#save2dolibarr_overlay {
+    backdrop-filter: blur(2px);
+}
+
+/* Messages de succès/erreur */
+.save2dolibarr-success {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 12px;
+    border-radius: 4px;
+    border-left: 4px solid #4caf50;
+    margin: 10px 0;
+}
+
+.save2dolibarr-error {
+    background: #ffebee;
+    color: #c62828;
+    padding: 12px;
+    border-radius: 4px;
+    border-left: 4px solid #f44336;
+    margin: 10px 0;
+}
+
+/* Responsive pour la nouvelle interface */
+@media (max-width: 768px) {
+    #save2dolibarr_modal {
+        width: 95% !important;
+        padding: 15px !important;
+    }
+    
+    .module-row {
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+    
+    .module-row > div {
+        flex: none !important;
+    }
+    
+    .module-row > div:nth-child(2) {
+        order: 1;
+    }
+    
+    .module-row > div:nth-child(1) {
+        order: 2;
+    }
+    
+    .module-row > div:nth-child(3) {
+        order: 3;
+    }
+    
+    .module-row > div:nth-child(4) {
+        order: 4;
+    }
+}
+
+/* Corrections de couleur pour les éléments du modal */
+#save2dolibarr_modal * {
+    color: #333;
+}
+
+#save2dolibarr_modal input, 
+#save2dolibarr_modal select,
+#save2dolibarr_modal textarea {
+    color: #333 !important;
+}
+
+#save2dolibarr_modal label {
+    color: #444 !important;
+}
+
+#save2dolibarr_modal strong {
+    color: inherit;
+}
+
+#save2dolibarr_modal small {
+    color: #666;
+}

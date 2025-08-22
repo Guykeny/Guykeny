@@ -1,0 +1,30 @@
+{
+    "name": "roundcube/save2dolibarr",
+    "type": "roundcube-plugin",
+    "description": "Plugin pour classer les emails dans Dolibarr avec rattachement aux objets",
+    "version": "2.0.0",
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Dolibarr Community",
+            "email": "contact@dolibarr.org",
+            "homepage": "https://www.dolibarr.org"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://plugins.roundcube.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "roundcube/plugin-installer": ">=0.1.3"
+    },
+    "extra": {
+        "roundcube": {
+            "min-version": "1.0",
+            "max-version": "1.6"
+        }
+    }
+}

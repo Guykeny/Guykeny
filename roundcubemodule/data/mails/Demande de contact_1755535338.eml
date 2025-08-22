@@ -1,0 +1,85 @@
+Return-Path: <dasi2036@fevier.o2switch.net>
+Received: from sucralose.o2switch.net
+	by sucralose.o2switch.net with LMTP
+	id oD0hFW8IomjtazwAkS4Gvg
+	(envelope-from <dasi2036@fevier.o2switch.net>); Sun, 17 Aug 2025 18:50:55 +0200
+Return-path: <dasi2036@fevier.o2switch.net>
+Envelope-to: contact@accens-avocats.com
+Delivery-date: Sun, 17 Aug 2025 18:50:55 +0200
+Received: from la.jabatus.fr ([109.234.163.20]:50776)
+	by sucralose.o2switch.net with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.98.2)
+	(envelope-from <dasi2036@fevier.o2switch.net>)
+	id 1ungau-0000000Gcrw-05Wa
+	for contact@accens-avocats.com;
+	Sun, 17 Aug 2025 18:50:55 +0200
+X-MailPropre-MailScanner-From: dasi2036@fevier.o2switch.net
+X-MailPropre-MailScanner-SpamCheck: not spam, SpamAssassin (not cached,
+	score=0.573, required 5, autolearn=disabled, BAD_PH 0.10,
+	HEADER_FROM_DIFFERENT_DOMAINS 0.10, HTML_MESSAGE 0.00,
+	HTML_MIME_NO_HTML_TAG 0.70, MIME_HTML_ONLY 0.70, OK_SPX -1.00,
+	RCVD_IN_DNSWL_BLOCKED 0.00, SPF_HELO_NONE 0.00, SPF_PASS -0.10,
+	SUKA_21 0.01, SUKA_24 0.01, SUKA_32 0.01, SUKA_46 0.01, SUKA_54 0.01,
+	SUKC_2 0.01, VM03 0.01)
+X-MailPropre-MailScanner: Not scanned: please contact your Internet E-Mail Service Provider for details
+X-MailPropre-MailScanner-ID: 605622806F7.A8211
+X-MailPropre-MailScanner-Information: Please contact the ISP for more information
+Received: from smtp.jabatus.fr (smtp.jabatus.fr [109.234.163.11])
+	by smtp-2.jabatus.fr (Postfix) with ESMTP id 605622806F7
+	for <contact@accens-avocats.com>; Sun, 17 Aug 2025 18:50:13 +0200 (CEST)
+Received: from fevier.o2switch.net (109-234-166-11.reverse.odns.fr [109.234.166.11])
+	by smtp.jabatus.fr (Postfix) with ESMTP id 5503F1004F1
+	for <contact@accens-avocats.com>; Sun, 17 Aug 2025 18:50:13 +0200 (CEST)
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=accens-services.com; s=default; h=Content-Transfer-Encoding:Content-Type:
+	MIME-Version:Message-ID:From:Date:Subject:To:Sender:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=2VxIRgtFkroji2Txt7ZKXj3CvUKkB1tBhyrELD1XTvU=; b=jQgO8sutDQmaoSunKRCgJ4Si9z
+	okjF0/6xJyL6KaulbEOZ9VkunodChm84OCLY/ukkDYtf/enHympL4QaIvUa4V8n02JFgXHLtc6Llr
+	mZHSWX7whKYBQ5PtA3dzk/LURHSGzaGpTGINL3dxtBwAcL+QDjVopO2nRE3/ZU0p1EXDWXEtkNmnl
+	vAd837kUB4Kz4nKqGWgdRqCPORC+kr9F6eS0uS5RJTnDWuVY9SFkaZP5yPHd3+w22Gkl3aic5Y2Yn
+	C345JBHku+KliQhoGEI41GKVvUu/Vd65GaEKIenwQBVBBH3kGUuC7QVtS7UiOjbjErGGDqqgOGO8r
+	dZEg8voA==;
+Received: from dasi2036 by fevier.o2switch.net with local (Exim 4.98.2)
+	(envelope-from <dasi2036@fevier.o2switch.net>)
+	id 1ungaB-000000039wr-2y6W;
+	Sun, 17 Aug 2025 18:50:11 +0200
+To: contact@accens-avocats.com, relationclients@accens.net
+Subject: Demande de contact
+Date: Sun, 17 Aug 2025 16:50:11 +0000
+From: Accens Services <noreply@accens-services.com>
+Message-ID: <jLLIsEtBDQhVO7GjHijAMIlX233KYiGBsq4q9sactZc@accens-services.com>
+X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - fevier.o2switch.net
+X-AntiAbuse: Original Domain - accens-avocats.com
+X-AntiAbuse: Originator/Caller UID/GID - [1075 980] / [47 12]
+X-AntiAbuse: Sender Address Domain - fevier.o2switch.net
+X-Get-Message-Sender-Via: fevier.o2switch.net: authenticated_id: dasi2036/from_h
+X-Authenticated-Sender: fevier.o2switch.net: noreply@accens-services.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: dasi2036.odns.fr:/accens-services.com/wp-admin
+
+<p>Vous avez une nouvelle demande de contact: </p>
+<ol>
+<li><b>Text</b><br />Gautier</li>
+<li><b>Email</b><br /><a href="mailto:mg.qualiteconseil@gmail.com">mg.qualiteconseil@gmail.com</a></li>
+<li><b>Phone</b><br />06 66 69 69 78</li>
+<li><b>Text</b><br />Qualiticien partagé</li>
+<li><b>Textarea</b><br />Bonjour,
+<p>Je voulais savoir si vous cherchiez des qualiticiens à temps partagé sur les Bouches du Rhône, en effet je cherche à compléter mon temps de travail et développer mon activité de consulting dans l'accompagnement d'ESSMS.  </p>
+<p>Merci d'avance de votre retour, </p>
+<p>Cordialement, </p>
+<p>Mélina Gautier</li>
+</ol>
+<p>En soumettant ce formulaire, j’accepte que les informations saisies soient collectées et traitées par Accens Services pour être recontacté dans le cadre de ma demande. Aucune utilisation commerciale des données est faite</p>
+<p>Pour en savoir plus sur la gestion de vos données personnelles et pour exercer vos droits, reportez-vous à la <a rel="noopener" target="_blank" href="https://accens-services.com/politique-de-confidentialite/">politique de confidentialité en cliquant ici</a></p>
+<ol></ol>
+<p>---<br />Ce message a été envoyé depuis <a href="https://accens-services.com">https://accens-services.com</a>.</p>
+

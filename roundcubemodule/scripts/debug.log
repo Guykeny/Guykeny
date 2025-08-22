@@ -1,0 +1,723 @@
+[2025-08-18 16:46:31] === DÉBUT SAVE_MAILS DEBUG ===
+[2025-08-18 16:46:31] Tentative de chargement de Dolibarr...
+[2025-08-18 16:46:31] Racine Dolibarr détectée: E:\wamp64\www\AVOCATS
+[2025-08-18 16:46:31] Tentative de chargement: E:\wamp64\www\AVOCATS/main.inc.php
+[2025-08-18 16:46:31] main.inc.php chargé avec succès
+[2025-08-18 16:46:31] Dolibarr version: 20.0.4
+[2025-08-18 16:46:31] Variables globales Dolibarr disponibles
+[2025-08-18 16:46:31] Connexion DB OK
+[2025-08-18 16:46:31] Input reçu: {"uid":"161301","mbox":"INBOX","fk_soc":null,"rc_user_email":"pierre.naitali@accens-avocats.com","from":"Accens Services <noreply@accens-services.com>","subject":"Demande de contact","message_id":"<jL...
+[2025-08-18 16:46:31] JSON décodé correctement
+[2025-08-18 16:46:31] UID trouvé: 161301
+[2025-08-18 16:46:31] Données extraites - Subject: Demande de contact, From: Accens Services <noreply@accens-services.com>
+[2025-08-18 16:46:31] Nombre de liens: 2
+[2025-08-18 16:46:31] Email expéditeur validé: noreply@accens-services.com
+[2025-08-18 16:46:31] Vérification des tables...
+[2025-08-18 16:46:31] ERREUR: Table llx_roundcubemodule_mail n'existe pas
+[2025-08-18 16:46:31] ERREUR: Table llx_roundcubemodule_mail n'existe pas. Veuillez exécuter le script SQL de création des tables.
+[2025-08-18 16:46:31] Fichier: E:\wamp64\www\AVOCATS\custom\roundcubemodule\scripts\save_mails.php Ligne: 153
+[2025-08-18 16:46:31] Trace: #0 {main}
+[2025-08-18 16:46:31] === FIN SAVE_MAILS DEBUG ===
+
+[2025-08-18 16:52:05] === DÉBUT SAVE_MAILS DEBUG ===
+[2025-08-18 16:52:05] Tentative de chargement de Dolibarr...
+[2025-08-18 16:52:05] Racine Dolibarr détectée: E:\wamp64\www\AVOCATS
+[2025-08-18 16:52:05] Tentative de chargement: E:\wamp64\www\AVOCATS/main.inc.php
+[2025-08-18 16:52:05] main.inc.php chargé avec succès
+[2025-08-18 16:52:05] Dolibarr version: 20.0.4
+[2025-08-18 16:52:05] Variables globales Dolibarr disponibles
+[2025-08-18 16:52:05] Connexion DB OK
+[2025-08-18 16:52:05] Input reçu: {"uid":"161301","mbox":"INBOX","fk_soc":null,"rc_user_email":"pierre.naitali@accens-avocats.com","from":"Accens Services <noreply@accens-services.com>","subject":"Demande de contact","message_id":"<jL...
+[2025-08-18 16:52:05] JSON décodé correctement
+[2025-08-18 16:52:05] UID trouvé: 161301
+[2025-08-18 16:52:05] Données extraites - Subject: Demande de contact, From: Accens Services <noreply@accens-services.com>
+[2025-08-18 16:52:05] Nombre de liens: 1
+[2025-08-18 16:52:05] Email expéditeur validé: noreply@accens-services.com
+[2025-08-18 16:52:05] Vérification des tables...
+[2025-08-18 16:52:05] ERREUR: Table llx_roundcubemodule_mail n'existe pas
+[2025-08-18 16:52:05] ERREUR: Table llx_roundcubemodule_mail n'existe pas. Veuillez exécuter le script SQL de création des tables.
+[2025-08-18 16:52:05] Fichier: E:\wamp64\www\AVOCATS\custom\roundcubemodule\scripts\save_mails.php Ligne: 153
+[2025-08-18 16:52:05] Trace: #0 {main}
+[2025-08-18 16:52:05] === FIN SAVE_MAILS DEBUG ===
+
+[2025-08-18 16:56:33] === DÉBUT SAVE_MAILS DEBUG (MAILBOXMODULE) ===
+[2025-08-18 16:56:33] Tentative de chargement de Dolibarr...
+[2025-08-18 16:56:33] Racine Dolibarr détectée: E:\wamp64\www\AVOCATS
+[2025-08-18 16:56:33] Tentative de chargement: E:\wamp64\www\AVOCATS/main.inc.php
+[2025-08-18 16:56:33] main.inc.php chargé avec succès
+[2025-08-18 16:56:33] Dolibarr version: 20.0.4
+[2025-08-18 16:56:33] Variables globales Dolibarr disponibles
+[2025-08-18 16:56:33] Connexion DB OK
+[2025-08-18 16:56:33] Input reçu: {"uid":"161297","mbox":"INBOX","fk_soc":null,"rc_user_email":"pierre.naitali@accens-avocats.com","from":"accens@3cxbylemnia.com","subject":"Votre rapport 3CX Rapport Hebdo - Commercial est pr\u00eat",...
+[2025-08-18 16:56:33] JSON décodé correctement
+[2025-08-18 16:56:33] UID trouvé: 161297
+[2025-08-18 16:56:33] Données extraites - Subject: Votre rapport 3CX Rapport Hebdo - Commercial est prêt, From: accens@3cxbylemnia.com
+[2025-08-18 16:56:33] Nombre de liens: 2
+[2025-08-18 16:56:33] Email expéditeur validé: accens@3cxbylemnia.com
+[2025-08-18 16:56:33] Vérification des tables mailboxmodule...
+[2025-08-18 16:56:33] Table llx_mailboxmodule_mail OK
+[2025-08-18 16:56:33] Table llx_mailboxmodule_attachment OK
+[2025-08-18 16:56:33] Table llx_mailboxmodule_mail_links OK
+[2025-08-18 16:56:33] Sauvegarde du fichier EML...
+[2025-08-18 16:56:33] Répertoire EML: E:/wamp64/www/AVOCATS/custom/roundcubemodule/data/mails/
+[2025-08-18 16:56:33] Fichier EML: E:/wamp64/www/AVOCATS/custom/roundcubemodule/data/mails/Votre rapport 3CX Rapport Hebdo - Commercial est p_1755536193.eml
+[2025-08-18 16:56:33] Fichier EML sauvegardé
+[2025-08-18 16:56:33] Recherche du tiers...
+[2025-08-18 16:56:33] SQL tiers: SELECT rowid, nom FROM llx_societe WHERE email = 'accens@3cxbylemnia.com'
+[2025-08-18 16:56:33] Aucun tiers trouvé par email
+[2025-08-18 16:56:33] Tiers trouvé via lien: ACCENS Services (sélectionné manuellement) (ID: 5671)
+[2025-08-18 16:56:33] Vérification doublons...
+[2025-08-18 16:56:33] SQL check: SELECT rowid FROM llx_mailboxmodule_mail 
+                  WHERE message_id = '<UYITRHHOYQU4.LKRHC893HQDF1@3cx>' OR (imap_uid = 161297 AND imap_mailbox = 'INBOX')
+[2025-08-18 16:56:33] Insertion du mail principal...
+[2025-08-18 16:56:33] SQL insert: INSERT INTO llx_mailboxmodule_mail
+        (message_id, subject, from_email, date_received, file_path, imap_mailbox, imap_uid, direction)
+        VALUES (
+            '<UYITRHHOYQU4.LKRHC893HQDF1@3cx>',
+            'Votre rapport 3CX Rapport Hebdo - Commercial est prêt',
+            'accens@3cxbylemnia.com',
+            '2025-08-17 03:00:00',
+            'custom/roundcubemodule/data/mails/Votre rapport 3CX Rapport Hebdo - Commercial est p_1755536193.eml',
+            'INBOX',
+            161297,
+            'received'
+        )
+[2025-08-18 16:56:33] Mail inséré avec ID: 1
+[2025-08-18 16:56:33] Traitement des pièces jointes...
+[2025-08-18 16:56:33] Pièces jointes traitées: 0
+[2025-08-18 16:56:33] Traitement des liaisons...
+[2025-08-18 16:56:33] Traitement lien: thirdparty ID 5671
+[2025-08-18 16:56:33] SQL vérification objet: SELECT rowid, nom as name FROM llx_societe WHERE rowid = 5671
+[2025-08-18 16:56:33] Objet trouvé: ACCENS Services
+[2025-08-18 16:56:33] SQL lien: INSERT INTO llx_mailboxmodule_mail_links
+                (fk_mail, target_type, target_id, target_name, date_created)
+                VALUES (
+                    1,
+                    'thirdparty',
+                    5671,
+                    'ACCENS Services',
+                    '2025-08-18 16:56:33'
+                )
+[2025-08-18 16:56:33] Lien créé avec succès
+[2025-08-18 16:56:33] Sauvegarde fichiers vers module thirdparty ID 5671
+[2025-08-18 16:56:33] Fichier EML copié: C:/doli_doc/AVOCATS/documents/thirdparty/5671/1755536193_Votre rapport 3CX Rapport Hebdo - Commercial est p_1755536193.eml
+[2025-08-18 16:56:33] Fichier EML ajouté à ecm_files
+[2025-08-18 16:56:33] Traitement lien: project ID 1520
+[2025-08-18 16:56:33] SQL vérification objet: SELECT rowid, title as name FROM llx_projet WHERE rowid = 1520
+[2025-08-18 16:56:33] Objet trouvé: RGPD - CITES CARITAS
+[2025-08-18 16:56:33] SQL lien: INSERT INTO llx_mailboxmodule_mail_links
+                (fk_mail, target_type, target_id, target_name, date_created)
+                VALUES (
+                    1,
+                    'project',
+                    1520,
+                    'RGPD - CITES CARITAS',
+                    '2025-08-18 16:56:33'
+                )
+[2025-08-18 16:56:33] Lien créé avec succès
+[2025-08-18 16:56:33] Sauvegarde fichiers vers module project ID 1520
+[2025-08-18 16:56:33] Fichier EML copié: C:/doli_doc/AVOCATS/documents/project/1520/1755536193_Votre rapport 3CX Rapport Hebdo - Commercial est p_1755536193.eml
+[2025-08-18 16:56:33] Fichier EML ajouté à ecm_files
+[2025-08-18 16:56:33] SUCCÈS: Mail UID=161297 enregistré avec succès et lié au tiers : ACCENS Services (sélectionné manuellement) (ID=5671). Fichier EML sauvegardé. Mail lié à 2 module(s) : thirdparty (ID: 5671 - ACCENS Services), project (ID: 1520 - RGPD - CITES CARITAS)
+[2025-08-18 16:56:33] === FIN SAVE_MAILS DEBUG (MAILBOXMODULE) ===
+
+[2025-08-18 17:01:37] === DÉBUT SAVE_MAILS DEBUG (MAILBOXMODULE) ===
+[2025-08-18 17:01:37] Tentative de chargement de Dolibarr...
+[2025-08-18 17:01:37] Racine Dolibarr détectée: E:\wamp64\www\AVOCATS
+[2025-08-18 17:01:37] Tentative de chargement: E:\wamp64\www\AVOCATS/main.inc.php
+[2025-08-18 17:01:37] main.inc.php chargé avec succès
+[2025-08-18 17:01:37] Dolibarr version: 20.0.4
+[2025-08-18 17:01:37] Variables globales Dolibarr disponibles
+[2025-08-18 17:01:37] Connexion DB OK
+[2025-08-18 17:01:37] Input reçu: {"uid":"161297","mbox":"INBOX","fk_soc":null,"rc_user_email":"pierre.naitali@accens-avocats.com","from":"accens@3cxbylemnia.com","subject":"Votre rapport 3CX Rapport Hebdo - Commercial est pr\u00eat",...
+[2025-08-18 17:01:37] JSON décodé correctement
+[2025-08-18 17:01:37] UID trouvé: 161297
+[2025-08-18 17:01:37] Données extraites - Subject: Votre rapport 3CX Rapport Hebdo - Commercial est prêt, From: accens@3cxbylemnia.com
+[2025-08-18 17:01:37] Nombre de liens: 1
+[2025-08-18 17:01:37] Email expéditeur validé: accens@3cxbylemnia.com
+[2025-08-18 17:01:37] Vérification des tables mailboxmodule...
+[2025-08-18 17:01:37] Table llx_mailboxmodule_mail OK
+[2025-08-18 17:01:37] Table llx_mailboxmodule_attachment OK
+[2025-08-18 17:01:37] Table llx_mailboxmodule_mail_links OK
+[2025-08-18 17:01:37] Sauvegarde du fichier EML...
+[2025-08-18 17:01:37] Répertoire EML: E:/wamp64/www/AVOCATS/custom/roundcubemodule/data/mails/
+[2025-08-18 17:01:37] Fichier EML: E:/wamp64/www/AVOCATS/custom/roundcubemodule/data/mails/Votre rapport 3CX Rapport Hebdo - Commercial est p_1755536497.eml
+[2025-08-18 17:01:37] Fichier EML sauvegardé
+[2025-08-18 17:01:37] Recherche du tiers...
+[2025-08-18 17:01:37] SQL tiers: SELECT rowid, nom FROM llx_societe WHERE email = 'accens@3cxbylemnia.com'
+[2025-08-18 17:01:37] Aucun tiers trouvé par email
+[2025-08-18 17:01:37] Tiers trouvé via lien: ACCENS Services (sélectionné manuellement) (ID: 5671)
+[2025-08-18 17:01:37] Vérification doublons...
+[2025-08-18 17:01:37] SQL check: SELECT rowid FROM llx_mailboxmodule_mail 
+                  WHERE message_id = '<UYITRHHOYQU4.LKRHC893HQDF1@3cx>' OR (imap_uid = 161297 AND imap_mailbox = 'INBOX')
+[2025-08-18 17:01:37] Insertion du mail principal...
+[2025-08-18 17:01:37] SQL insert: INSERT INTO llx_mailboxmodule_mail
+        (message_id, subject, from_email, date_received, file_path, imap_mailbox, imap_uid, direction)
+        VALUES (
+            '<UYITRHHOYQU4.LKRHC893HQDF1@3cx>',
+            'Votre rapport 3CX Rapport Hebdo - Commercial est prêt',
+            'accens@3cxbylemnia.com',
+            '2025-08-17 03:00:00',
+            'custom/roundcubemodule/data/mails/Votre rapport 3CX Rapport Hebdo - Commercial est p_1755536497.eml',
+            'INBOX',
+            161297,
+            'received'
+        )
+[2025-08-18 17:01:37] Mail inséré avec ID: 1
+[2025-08-18 17:01:37] Traitement des pièces jointes...
+[2025-08-18 17:01:37] Pièces jointes traitées: 0
+[2025-08-18 17:01:37] Traitement des liaisons...
+[2025-08-18 17:01:37] Traitement lien: thirdparty ID 5671
+[2025-08-18 17:01:37] SQL vérification objet: SELECT rowid, nom as name FROM llx_societe WHERE rowid = 5671
+[2025-08-18 17:01:37] Objet trouvé: ACCENS Services
+[2025-08-18 17:01:37] SQL lien: INSERT INTO llx_mailboxmodule_mail_links
+                (fk_mail, target_type, target_id, target_name, date_created)
+                VALUES (
+                    1,
+                    'thirdparty',
+                    5671,
+                    'ACCENS Services',
+                    '2025-08-18 17:01:37'
+                )
+[2025-08-18 17:01:37] Lien créé avec succès
+[2025-08-18 17:01:37] Sauvegarde fichiers vers module thirdparty ID 5671
+[2025-08-18 17:01:37] Fichier EML copié: C:/doli_doc/AVOCATS/documents/thirdparty/5671/1755536497_Votre rapport 3CX Rapport Hebdo - Commercial est p_1755536497.eml
+[2025-08-18 17:01:37] Fichier EML ajouté à ecm_files
+[2025-08-18 17:01:37] SUCCÈS: Mail UID=161297 enregistré avec succès et lié au tiers : ACCENS Services (sélectionné manuellement) (ID=5671). Fichier EML sauvegardé. Mail lié à 1 module(s) : thirdparty (ID: 5671 - ACCENS Services)
+[2025-08-18 17:01:37] === FIN SAVE_MAILS DEBUG (MAILBOXMODULE) ===
+
+[2025-08-18 17:20:03] === DÉBUT SAVE_MAILS UTF8 FIXED ===
+[2025-08-18 17:20:03] Tentative de chargement de Dolibarr...
+[2025-08-18 17:20:03] Racine Dolibarr: E:\wamp64\www\AVOCATS
+[2025-08-18 17:20:03] Dolibarr chargé - Version: 20.0.4
+[2025-08-18 17:20:03] DB connectée
+[2025-08-18 17:20:03] Input brut reçu (3754 bytes)
+[2025-08-18 17:20:03] JSON décodé correctement
+[2025-08-18 17:20:03] Subject nettoyé: Votre rapport 3CX Rapport Hebdo - Commercial est prêt
+[2025-08-18 17:20:03] From: accens@3cxbylemnia.com
+[2025-08-18 17:20:03] Liens: 2
+[2025-08-18 17:20:03] Email expéditeur: accens@3cxbylemnia.com
+[2025-08-18 17:20:03] Tables vérifiées
+[2025-08-18 17:20:03] Fichier EML sauvé: Votre rapport 3CX Rapport Hebdo - Commercial est p_1755537603.eml
+[2025-08-18 17:20:03] ERREUR: Mail déjà enregistré
+[2025-08-18 17:20:03] Ligne: 222 Fichier: save_mails.php
+[2025-08-18 17:20:03] === FIN SAVE_MAILS ===
+
+[2025-08-18 17:38:09] === DÉBUT SAVE_MAILS UTF8 FIXED ===
+[2025-08-18 17:38:09] Tentative de chargement de Dolibarr...
+[2025-08-18 17:38:09] Racine Dolibarr: E:\wamp64\www\AVOCATS
+[2025-08-18 17:38:09] Dolibarr chargé - Version: 20.0.4
+[2025-08-18 17:38:09] DB connectée
+[2025-08-18 17:38:09] Input brut reçu (3783 bytes)
+[2025-08-18 17:38:09] JSON décodé correctement
+[2025-08-18 17:38:09] Subject nettoyé: Votre rapport 3CX Rapport Hebdo - Commercial est prêt
+[2025-08-18 17:38:09] From: accens@3cxbylemnia.com
+[2025-08-18 17:38:09] Liens: 3
+[2025-08-18 17:38:09] Email expéditeur: accens@3cxbylemnia.com
+[2025-08-18 17:38:09] Tables vérifiées
+[2025-08-18 17:38:09] Fichier EML sauvé: Votre rapport 3CX Rapport Hebdo - Commercial est p_1755538689.eml
+[2025-08-18 17:38:09] SQL insert: INSERT INTO llx_mailboxmodule_mail 
+                   (message_id, subject, from_email, date_received, file_path, imap_mailbox, imap_uid, direction, entity) 
+                   VALUES ('<UYITRHHOYQU4.LKRHC893HQDF1@3cx>', 'Votre rapport 3CX Rapport Hebdo - Commercial est prêt', 'accens@3cxbylemnia.com', '2025-08-17 03:00:00', 'custom/roundcubemodule/data/mails/Votre rapport 3CX Rapport Hebdo - Commercial est p_1755538689.eml', 'INBOX', 161297, 'received', 1)
+[2025-08-18 17:38:09] Mail inséré avec ID: 1
+[2025-08-18 17:38:09] Pièces jointes: 0
+[2025-08-18 17:38:09] Table liens existe - traitement des liaisons
+[2025-08-18 17:38:09] SUCCÈS: Mail UID=161297 enregistré avec succès et lié au tiers: ACCENS Services (sélectionné) (ID=5671). Fichier EML sauvé. Lié à 3 module(s): thirdparty (ID: 5671), contact (ID: 2660), project (ID: 1343)
+[2025-08-18 17:38:09] === FIN SAVE_MAILS ===
+
+[2025-08-18 18:04:02] === DÉBUT SAVE_MAILS UTF8 FIXED ===
+[2025-08-18 18:11:53] === DÉBUT SAVE_MAILS UTF8 FIXED ===
+[2025-08-18 18:14:03] === DÉBUT SAVE_MAILS UTF8 FIXED ===
+[2025-08-18 18:23:18] === DÉBUT SAVE_MAILS ===
+[2025-08-18 18:23:18] Erreur chargement Dolibarr: main.inc.php non trouvé
+[2025-08-18 18:26:38] === DÉBUT SAVE_MAILS UTF8 FIXED ===
+[2025-08-18 18:30:27] === DÉBUT SAVE_MAILS UTF8 FIXED ===
+[2025-08-18 18:30:27] Tentative de chargement de Dolibarr...
+[2025-08-18 18:30:27] Racine Dolibarr: E:\wamp64\www\AVOCATS
+[2025-08-18 18:30:27] Dolibarr chargé - Version: 20.0.4
+[2025-08-18 18:30:27] DB connectée
+[2025-08-18 18:30:27] Input brut reçu (320315 bytes)
+[2025-08-18 18:30:27] JSON décodé correctement
+[2025-08-18 18:30:27] Subject nettoyé: TR: FACTURES IMPAYEES CCAS DE CERIZAY (2018-2020) c/ URSSAF  [04.04113]
+[2025-08-18 18:30:27] From: <vlaffly@accens-avocats.com>
+[2025-08-18 18:30:27] Liens: 1
+[2025-08-18 18:30:27] Email expéditeur: vlaffly@accens-avocats.com
+[2025-08-18 18:30:27] Tables vérifiées
+[2025-08-18 18:30:27] Fichier EML sauvé: TR_ FACTURES IMPAYEES CCAS DE CERIZAY _2018-2020_ _1755541827.eml
+[2025-08-18 18:30:27] SQL insert: INSERT INTO llx_mailboxmodule_mail 
+                   (message_id, subject, from_email, date_received, file_path, imap_mailbox, imap_uid, direction, entity) 
+                   VALUES ('<004901dc1018$6e309750$4a91c5f0$@accens-avocats.com>', 'TR: FACTURES IMPAYEES CCAS DE CERIZAY (2018-2020) c/ URSSAF  [04.04113]', 'vlaffly@accens-avocats.com', '2025-08-18 08:16:41', 'custom/roundcubemodule/data/mails/TR_ FACTURES IMPAYEES CCAS DE CERIZAY _2018-2020_ _1755541827.eml', 'INBOX', 161305, 'received', 1)
+[2025-08-18 18:30:27] Mail inséré avec ID: 1
+[2025-08-18 18:30:27] Pièces jointes: 0
+[2025-08-18 18:30:27] Table liens existe - traitement des liaisons
+[2025-08-18 18:30:27] SUCCÈS: Mail UID=161305 enregistré avec succès et lié au tiers: ACCENS Avocats (sélectionné) (ID=1090). Fichier EML sauvé. Lié à 1 module(s): thirdparty (ID: 1090)
+[2025-08-18 18:30:27] === FIN SAVE_MAILS ===
+
+[2025-08-18 18:31:57] === DÉBUT SAVE_MAILS DEBUG (MAILBOXMODULE) ===
+[2025-08-18 18:31:57] Tentative de chargement de Dolibarr...
+[2025-08-18 18:31:57] Racine Dolibarr détectée: E:\wamp64\www\AVOCATS
+[2025-08-18 18:31:57] Tentative de chargement: E:\wamp64\www\AVOCATS/main.inc.php
+[2025-08-18 18:31:57] main.inc.php chargé avec succès
+[2025-08-18 18:31:57] Dolibarr version: 20.0.4
+[2025-08-18 18:31:57] Variables globales Dolibarr disponibles
+[2025-08-18 18:31:57] Connexion DB OK
+[2025-08-18 18:31:57] Input reçu: {"uid":"161301","mbox":"INBOX","fk_soc":null,"rc_user_email":"pierre.naitali@accens-avocats.com","from":"Accens Services <noreply@accens-services.com>","subject":"Demande de contact","message_id":"<jL...
+[2025-08-18 18:31:57] JSON décodé correctement
+[2025-08-18 18:31:57] UID trouvé: 161301
+[2025-08-18 18:31:57] Données extraites - Subject: Demande de contact, From: Accens Services <noreply@accens-services.com>
+[2025-08-18 18:31:57] Nombre de liens: 3
+[2025-08-18 18:31:57] Email expéditeur validé: noreply@accens-services.com
+[2025-08-18 18:31:57] Vérification des tables mailboxmodule...
+[2025-08-18 18:31:57] Table llx_mailboxmodule_mail OK
+[2025-08-18 18:31:57] Table llx_mailboxmodule_attachment OK
+[2025-08-18 18:31:57] Table llx_mailboxmodule_mail_links OK
+[2025-08-18 18:31:57] Sauvegarde du fichier EML...
+[2025-08-18 18:31:57] Répertoire EML: E:/wamp64/www/AVOCATS/custom/roundcubemodule/data/mails/
+[2025-08-18 18:31:57] Fichier EML: E:/wamp64/www/AVOCATS/custom/roundcubemodule/data/mails/Demande de contact_1755541917.eml
+[2025-08-18 18:31:57] Fichier EML sauvegardé
+[2025-08-18 18:31:57] Recherche du tiers...
+[2025-08-18 18:31:57] SQL tiers: SELECT rowid, nom FROM llx_societe WHERE email = 'noreply@accens-services.com'
+[2025-08-18 18:31:57] Aucun tiers trouvé par email
+[2025-08-18 18:31:57] Tiers trouvé via lien: ACCENS Avocats (sélectionné manuellement) (ID: 1090)
+[2025-08-18 18:31:57] Vérification doublons...
+[2025-08-18 18:31:57] SQL check: SELECT rowid FROM llx_mailboxmodule_mail 
+                  WHERE message_id = '<jLLIsEtBDQhVO7GjHijAMIlX233KYiGBsq4q9sactZc@accens-services.com>' OR (imap_uid = 161301 AND imap_mailbox = 'INBOX')
+[2025-08-18 18:31:57] Insertion du mail principal...
+[2025-08-18 18:31:57] SQL insert: INSERT INTO llx_mailboxmodule_mail
+        (message_id, subject, from_email, date_received, file_path, imap_mailbox, imap_uid, direction)
+        VALUES (
+            '<jLLIsEtBDQhVO7GjHijAMIlX233KYiGBsq4q9sactZc@accens-services.com>',
+            'Demande de contact',
+            'noreply@accens-services.com',
+            '2025-08-17 16:50:11',
+            'custom/roundcubemodule/data/mails/Demande de contact_1755541917.eml',
+            'INBOX',
+            161301,
+            'received'
+        )
+[2025-08-18 18:31:57] Mail inséré avec ID: 2
+[2025-08-18 18:31:57] Traitement des pièces jointes...
+[2025-08-18 18:31:57] Pièces jointes traitées: 0
+[2025-08-18 18:31:57] Traitement des liaisons...
+[2025-08-18 18:31:57] Traitement lien: thirdparty ID 1090
+[2025-08-18 18:31:57] SQL vérification objet: SELECT rowid, nom as name FROM llx_societe WHERE rowid = 1090
+[2025-08-18 18:31:57] Objet trouvé: ACCENS Avocats
+[2025-08-18 18:31:57] SQL lien: INSERT INTO llx_mailboxmodule_mail_links
+                (fk_mail, target_type, target_id, target_name, date_created)
+                VALUES (
+                    2,
+                    'thirdparty',
+                    1090,
+                    'ACCENS Avocats',
+                    '2025-08-18 18:31:57'
+                )
+[2025-08-18 18:31:57] Lien créé avec succès
+[2025-08-18 18:31:57] Sauvegarde fichiers vers module thirdparty ID 1090
+[2025-08-18 18:31:57] Fichier EML copié: C:/doli_doc/AVOCATS/documents/thirdparty/1090/1755541917_Demande de contact_1755541917.eml
+[2025-08-18 18:31:57] Fichier EML ajouté à ecm_files
+[2025-08-18 18:31:57] Traitement lien: contact ID 251
+[2025-08-18 18:31:57] SQL vérification objet: SELECT rowid, CONCAT(COALESCE(firstname,''), ' ', COALESCE(lastname,'')) as name FROM llx_socpeople WHERE rowid = 251
+[2025-08-18 18:31:57] Objet trouvé: Roxane NAITALI
+[2025-08-18 18:31:57] SQL lien: INSERT INTO llx_mailboxmodule_mail_links
+                (fk_mail, target_type, target_id, target_name, date_created)
+                VALUES (
+                    2,
+                    'contact',
+                    251,
+                    'Roxane NAITALI',
+                    '2025-08-18 18:31:57'
+                )
+[2025-08-18 18:31:57] Lien créé avec succès
+[2025-08-18 18:31:57] Sauvegarde fichiers vers module contact ID 251
+[2025-08-18 18:31:57] Fichier EML copié: C:/doli_doc/AVOCATS/documents/contact/251/1755541917_Demande de contact_1755541917.eml
+[2025-08-18 18:31:57] Fichier EML ajouté à ecm_files
+[2025-08-18 18:31:57] Traitement lien: project ID 1345
+[2025-08-18 18:31:57] SQL vérification objet: SELECT rowid, title as name FROM llx_projet WHERE rowid = 1345
+[2025-08-18 18:31:57] Objet trouvé: ADPEP 64 - DPO
+[2025-08-18 18:31:57] SQL lien: INSERT INTO llx_mailboxmodule_mail_links
+                (fk_mail, target_type, target_id, target_name, date_created)
+                VALUES (
+                    2,
+                    'project',
+                    1345,
+                    'ADPEP 64 - DPO',
+                    '2025-08-18 18:31:57'
+                )
+[2025-08-18 18:31:57] Lien créé avec succès
+[2025-08-18 18:31:57] Sauvegarde fichiers vers module project ID 1345
+[2025-08-18 18:31:57] Fichier EML copié: C:/doli_doc/AVOCATS/documents/project/1345/1755541917_Demande de contact_1755541917.eml
+[2025-08-18 18:31:57] Fichier EML ajouté à ecm_files
+[2025-08-18 18:31:57] SUCCÈS: Mail UID=161301 enregistré avec succès et lié au tiers : ACCENS Avocats (sélectionné manuellement) (ID=1090). Fichier EML sauvegardé. Mail lié à 3 module(s) : thirdparty (ID: 1090 - ACCENS Avocats), contact (ID: 251 - Roxane NAITALI), project (ID: 1345 - ADPEP 64 - DPO)
+[2025-08-18 18:31:57] === FIN SAVE_MAILS DEBUG (MAILBOXMODULE) ===
+
+[2025-08-18 21:00:37] === DÉBUT SAVE_MAILS DEBUG (MAILBOXMODULE) ===
+[2025-08-18 21:00:37] Tentative de chargement de Dolibarr...
+[2025-08-18 21:00:37] Racine Dolibarr détectée: E:\wamp64\www\AVOCATS
+[2025-08-18 21:00:37] Tentative de chargement: E:\wamp64\www\AVOCATS/main.inc.php
+[2025-08-18 21:00:37] main.inc.php chargé avec succès
+[2025-08-18 21:00:37] Dolibarr version: 20.0.4
+[2025-08-18 21:00:37] Variables globales Dolibarr disponibles
+[2025-08-18 21:00:37] Connexion DB OK
+[2025-08-18 21:00:37] Input reçu: {"uid":"161305","mbox":"INBOX","fk_soc":null,"rc_user_email":"pierre.naitali@accens-avocats.com","from":"<vlaffly@accens-avocats.com>","subject":"TR: FACTURES IMPAYEES CCAS DE CERIZAY (2018-2020) c\/ ...
+[2025-08-18 21:00:37] JSON décodé correctement
+[2025-08-18 21:00:37] UID trouvé: 161305
+[2025-08-18 21:00:37] Données extraites - Subject: TR: FACTURES IMPAYEES CCAS DE CERIZAY (2018-2020) c/ URSSAF  [04.04113], From: <vlaffly@accens-avocats.com>
+[2025-08-18 21:00:37] Nombre de liens: 3
+[2025-08-18 21:00:37] Email expéditeur validé: vlaffly@accens-avocats.com
+[2025-08-18 21:00:37] Vérification des tables mailboxmodule...
+[2025-08-18 21:00:37] Table llx_mailboxmodule_mail OK
+[2025-08-18 21:00:37] Table llx_mailboxmodule_attachment OK
+[2025-08-18 21:00:37] Table llx_mailboxmodule_mail_links OK
+[2025-08-18 21:00:37] Sauvegarde du fichier EML...
+[2025-08-18 21:00:37] Répertoire EML: E:/wamp64/www/AVOCATS/custom/roundcubemodule/data/mails/
+[2025-08-18 21:00:37] Fichier EML: E:/wamp64/www/AVOCATS/custom/roundcubemodule/data/mails/TR FACTURES IMPAYEES CCAS DE CERIZAY 2018-2020 c U_1755550837.eml
+[2025-08-18 21:00:37] Fichier EML sauvegardé
+[2025-08-18 21:00:37] Recherche du tiers...
+[2025-08-18 21:00:37] SQL tiers: SELECT rowid, nom FROM llx_societe WHERE email = 'vlaffly@accens-avocats.com'
+[2025-08-18 21:00:37] Aucun tiers trouvé par email
+[2025-08-18 21:00:37] Tiers trouvé via lien: ADPEP 64 (sélectionné manuellement) (ID: 1795)
+[2025-08-18 21:00:37] Vérification doublons...
+[2025-08-18 21:00:37] SQL check: SELECT rowid FROM llx_mailboxmodule_mail 
+                  WHERE message_id = '<004901dc1018$6e309750$4a91c5f0$@accens-avocats.com>' OR (imap_uid = 161305 AND imap_mailbox = 'INBOX')
+[2025-08-18 21:00:37] Mail déjà existant
+[2025-08-18 21:00:37] ERREUR: Mail déjà enregistré
+[2025-08-18 21:00:37] Fichier: E:\wamp64\www\AVOCATS\custom\roundcubemodule\scripts\save_mails.php Ligne: 243
+[2025-08-18 21:00:37] Trace: #0 {main}
+[2025-08-18 21:00:37] === FIN SAVE_MAILS DEBUG (MAILBOXMODULE) ===
+
+[2025-08-18 21:01:24] === DÉBUT SAVE_MAILS DEBUG (MAILBOXMODULE) ===
+[2025-08-18 21:01:24] Tentative de chargement de Dolibarr...
+[2025-08-18 21:01:24] Racine Dolibarr détectée: E:\wamp64\www\AVOCATS
+[2025-08-18 21:01:24] Tentative de chargement: E:\wamp64\www\AVOCATS/main.inc.php
+[2025-08-18 21:01:24] main.inc.php chargé avec succès
+[2025-08-18 21:01:24] Dolibarr version: 20.0.4
+[2025-08-18 21:01:24] Variables globales Dolibarr disponibles
+[2025-08-18 21:01:24] Connexion DB OK
+[2025-08-18 21:01:24] Input reçu: {"uid":"161306","mbox":"INBOX","fk_soc":null,"rc_user_email":"pierre.naitali@accens-avocats.com","from":"\"a.vitour@accens-avocats.com\" <public@accens-avocats.com>","subject":"EHPAD CHEZ NOUS - agent...
+[2025-08-18 21:01:25] JSON décodé correctement
+[2025-08-18 21:01:25] UID trouvé: 161306
+[2025-08-18 21:01:25] Données extraites - Subject: EHPAD CHEZ NOUS - agent [04.04217], From: "a.vitour@accens-avocats.com" <public@accens-avocats.com>
+[2025-08-18 21:01:25] Nombre de liens: 3
+[2025-08-18 21:01:25] Email expéditeur validé: public@accens-avocats.com
+[2025-08-18 21:01:25] Vérification des tables mailboxmodule...
+[2025-08-18 21:01:25] Table llx_mailboxmodule_mail OK
+[2025-08-18 21:01:25] Table llx_mailboxmodule_attachment OK
+[2025-08-18 21:01:25] Table llx_mailboxmodule_mail_links OK
+[2025-08-18 21:01:25] Sauvegarde du fichier EML...
+[2025-08-18 21:01:25] Répertoire EML: E:/wamp64/www/AVOCATS/custom/roundcubemodule/data/mails/
+[2025-08-18 21:01:25] Fichier EML: E:/wamp64/www/AVOCATS/custom/roundcubemodule/data/mails/EHPAD CHEZ NOUS - agent 04.04217_1755550885.eml
+[2025-08-18 21:01:25] Fichier EML sauvegardé
+[2025-08-18 21:01:25] Recherche du tiers...
+[2025-08-18 21:01:25] SQL tiers: SELECT rowid, nom FROM llx_societe WHERE email = 'public@accens-avocats.com'
+[2025-08-18 21:01:25] Aucun tiers trouvé par email
+[2025-08-18 21:01:25] Tiers trouvé via lien: ADPEP 64 (sélectionné manuellement) (ID: 1795)
+[2025-08-18 21:01:25] Vérification doublons...
+[2025-08-18 21:01:25] SQL check: SELECT rowid FROM llx_mailboxmodule_mail 
+                  WHERE message_id = '<000e01dc1023$02f4f520$08dedf60$@accens-avocats.com>' OR (imap_uid = 161306 AND imap_mailbox = 'INBOX')
+[2025-08-18 21:01:25] Insertion du mail principal...
+[2025-08-18 21:01:25] SQL insert: INSERT INTO llx_mailboxmodule_mail
+        (message_id, subject, from_email, date_received, file_path, imap_mailbox, imap_uid, direction)
+        VALUES (
+            '<000e01dc1023$02f4f520$08dedf60$@accens-avocats.com>',
+            'EHPAD CHEZ NOUS - agent [04.04217]',
+            'public@accens-avocats.com',
+            '2025-08-18 09:32:25',
+            'custom/roundcubemodule/data/mails/EHPAD CHEZ NOUS - agent 04.04217_1755550885.eml',
+            'INBOX',
+            161306,
+            'received'
+        )
+[2025-08-18 21:01:25] Mail inséré avec ID: 3
+[2025-08-18 21:01:25] Traitement des pièces jointes...
+[2025-08-18 21:01:25] Pièces jointes traitées: 0
+[2025-08-18 21:01:25] Traitement des liaisons...
+[2025-08-18 21:01:25] Traitement lien: thirdparty ID 1795
+[2025-08-18 21:01:25] SQL vérification objet: SELECT rowid, nom as name FROM llx_societe WHERE rowid = 1795
+[2025-08-18 21:01:25] Objet trouvé: ADPEP 64
+[2025-08-18 21:01:25] SQL lien: INSERT INTO llx_mailboxmodule_mail_links
+                (fk_mail, target_type, target_id, target_name, date_created)
+                VALUES (
+                    3,
+                    'thirdparty',
+                    1795,
+                    'ADPEP 64',
+                    '2025-08-18 21:01:25'
+                )
+[2025-08-18 21:01:25] Lien créé avec succès
+[2025-08-18 21:01:25] Sauvegarde fichiers vers module thirdparty ID 1795
+[2025-08-18 21:01:25] Fichier EML copié: C:/doli_doc/AVOCATS/documents/thirdparty/1795/1755550885_EHPAD CHEZ NOUS - agent 04.04217_1755550885.eml
+[2025-08-18 21:01:25] Fichier EML ajouté à ecm_files
+[2025-08-18 21:01:25] Pièce jointe copiée: C:/doli_doc/AVOCATS/documents/thirdparty/1795/1755550885_image002.png
+[2025-08-18 21:01:25] Pièce jointe ajoutée à ecm_files: image002.png
+[2025-08-18 21:01:25] Pièce jointe copiée: C:/doli_doc/AVOCATS/documents/thirdparty/1795/1755550885_image003.png
+[2025-08-18 21:01:25] Pièce jointe ajoutée à ecm_files: image003.png
+[2025-08-18 21:01:25] Pièce jointe copiée: C:/doli_doc/AVOCATS/documents/thirdparty/1795/1755550885_250816_Lettre____BOUGEL_Julie__Mme__question_cong__s_agent_CDD.pdf
+[2025-08-18 21:01:25] Pièce jointe ajoutée à ecm_files: 250816_Lettre____BOUGEL_Julie__Mme__question_cong__s_agent_CDD.pdf
+[2025-08-18 21:01:25] Traitement lien: contact ID 251
+[2025-08-18 21:01:25] SQL vérification objet: SELECT rowid, CONCAT(COALESCE(firstname,''), ' ', COALESCE(lastname,'')) as name FROM llx_socpeople WHERE rowid = 251
+[2025-08-18 21:01:25] Objet trouvé: Roxane NAITALI
+[2025-08-18 21:01:25] SQL lien: INSERT INTO llx_mailboxmodule_mail_links
+                (fk_mail, target_type, target_id, target_name, date_created)
+                VALUES (
+                    3,
+                    'contact',
+                    251,
+                    'Roxane NAITALI',
+                    '2025-08-18 21:01:25'
+                )
+[2025-08-18 21:01:25] Lien créé avec succès
+[2025-08-18 21:01:25] Sauvegarde fichiers vers module contact ID 251
+[2025-08-18 21:01:25] Fichier EML copié: C:/doli_doc/AVOCATS/documents/contact/251/1755550885_EHPAD CHEZ NOUS - agent 04.04217_1755550885.eml
+[2025-08-18 21:01:25] Fichier EML ajouté à ecm_files
+[2025-08-18 21:01:25] Pièce jointe copiée: C:/doli_doc/AVOCATS/documents/contact/251/1755550885_image002.png
+[2025-08-18 21:01:25] Pièce jointe ajoutée à ecm_files: image002.png
+[2025-08-18 21:01:25] Pièce jointe copiée: C:/doli_doc/AVOCATS/documents/contact/251/1755550885_image003.png
+[2025-08-18 21:01:25] Pièce jointe ajoutée à ecm_files: image003.png
+[2025-08-18 21:01:25] Pièce jointe copiée: C:/doli_doc/AVOCATS/documents/contact/251/1755550885_250816_Lettre____BOUGEL_Julie__Mme__question_cong__s_agent_CDD.pdf
+[2025-08-18 21:01:25] Pièce jointe ajoutée à ecm_files: 250816_Lettre____BOUGEL_Julie__Mme__question_cong__s_agent_CDD.pdf
+[2025-08-18 21:01:25] Traitement lien: project ID 1345
+[2025-08-18 21:01:25] SQL vérification objet: SELECT rowid, title as name FROM llx_projet WHERE rowid = 1345
+[2025-08-18 21:01:25] Objet trouvé: ADPEP 64 - DPO
+[2025-08-18 21:01:25] SQL lien: INSERT INTO llx_mailboxmodule_mail_links
+                (fk_mail, target_type, target_id, target_name, date_created)
+                VALUES (
+                    3,
+                    'project',
+                    1345,
+                    'ADPEP 64 - DPO',
+                    '2025-08-18 21:01:25'
+                )
+[2025-08-18 21:01:25] Lien créé avec succès
+[2025-08-18 21:01:25] Sauvegarde fichiers vers module project ID 1345
+[2025-08-18 21:01:25] Fichier EML copié: C:/doli_doc/AVOCATS/documents/project/1345/1755550885_EHPAD CHEZ NOUS - agent 04.04217_1755550885.eml
+[2025-08-18 21:01:25] Fichier EML ajouté à ecm_files
+[2025-08-18 21:01:25] Pièce jointe copiée: C:/doli_doc/AVOCATS/documents/project/1345/1755550885_image002.png
+[2025-08-18 21:01:25] Pièce jointe ajoutée à ecm_files: image002.png
+[2025-08-18 21:01:25] Pièce jointe copiée: C:/doli_doc/AVOCATS/documents/project/1345/1755550885_image003.png
+[2025-08-18 21:01:25] Pièce jointe ajoutée à ecm_files: image003.png
+[2025-08-18 21:01:25] Pièce jointe copiée: C:/doli_doc/AVOCATS/documents/project/1345/1755550885_250816_Lettre____BOUGEL_Julie__Mme__question_cong__s_agent_CDD.pdf
+[2025-08-18 21:01:25] Pièce jointe ajoutée à ecm_files: 250816_Lettre____BOUGEL_Julie__Mme__question_cong__s_agent_CDD.pdf
+[2025-08-18 21:01:25] SUCCÈS: Mail UID=161306 enregistré avec succès et lié au tiers : ADPEP 64 (sélectionné manuellement) (ID=1795). Fichier EML sauvegardé. Mail lié à 3 module(s) : thirdparty (ID: 1795 - ADPEP 64), contact (ID: 251 - Roxane NAITALI), project (ID: 1345 - ADPEP 64 - DPO)
+[2025-08-18 21:01:25] === FIN SAVE_MAILS DEBUG (MAILBOXMODULE) ===
+
+[2025-08-18 21:17:03] === DÉBUT SAVE_MAILS DEBUG (MAILBOXMODULE) ===
+[2025-08-18 21:17:03] Tentative de chargement de Dolibarr...
+[2025-08-18 21:17:03] Racine Dolibarr détectée: E:\wamp64\www\AVOCATS
+[2025-08-18 21:17:03] Tentative de chargement: E:\wamp64\www\AVOCATS/main.inc.php
+[2025-08-18 21:17:03] main.inc.php chargé avec succès
+[2025-08-18 21:17:03] Dolibarr version: 20.0.4
+[2025-08-18 21:17:03] Variables globales Dolibarr disponibles
+[2025-08-18 21:17:03] Connexion DB OK
+[2025-08-18 21:17:03] Input reçu: {"uid":"161313","mbox":"INBOX","fk_soc":null,"rc_user_email":"pierre.naitali@accens-avocats.com","from":"\"Michel  Beucler\" <m.beucler@certif-finances.fr>","subject":"RE: LETTRE DE MISSION SOLIHA","m...
+[2025-08-18 21:17:03] JSON décodé correctement
+[2025-08-18 21:17:03] UID trouvé: 161313
+[2025-08-18 21:17:03] Données extraites - Subject: RE: LETTRE DE MISSION SOLIHA, From: "Michel  Beucler" <m.beucler@certif-finances.fr>
+[2025-08-18 21:17:03] Nombre de liens: 3
+[2025-08-18 21:17:03] Email expéditeur validé: m.beucler@certif-finances.fr
+[2025-08-18 21:17:03] Vérification des tables mailboxmodule...
+[2025-08-18 21:17:03] Table llx_mailboxmodule_mail OK
+[2025-08-18 21:17:03] Table llx_mailboxmodule_attachment OK
+[2025-08-18 21:17:03] Table llx_mailboxmodule_mail_links OK
+[2025-08-18 21:17:03] Table llx_mailboxmodule_mail_audit OK
+[2025-08-18 21:17:03] Sauvegarde du fichier EML...
+[2025-08-18 21:17:03] Répertoire EML: E:/wamp64/www/AVOCATS/custom/roundcubemodule/data/mails/
+[2025-08-18 21:17:03] Fichier EML: E:/wamp64/www/AVOCATS/custom/roundcubemodule/data/mails/RE LETTRE DE MISSION SOLIHA_1755551823.eml
+[2025-08-18 21:17:03] Fichier EML sauvegardé
+[2025-08-18 21:17:03] Recherche du tiers...
+[2025-08-18 21:17:03] SQL tiers: SELECT rowid, nom FROM llx_societe WHERE email = 'm.beucler@certif-finances.fr'
+[2025-08-18 21:17:03] Aucun tiers trouvé par email
+[2025-08-18 21:17:03] Tiers trouvé via lien: ACCENS Avocats (sélectionné manuellement) (ID: 1090)
+[2025-08-18 21:17:03] Vérification doublons...
+[2025-08-18 21:17:03] SQL check: SELECT rowid FROM llx_mailboxmodule_mail 
+                  WHERE message_id = '<PA3PPFF7FDD5F7F0BBE6B5F6BC67148972AD031A@PA3PPFF7FDD5F7F.FRAP264.PROD.OUTLOOK.COM>' OR (imap_uid = 161313 AND imap_mailbox = 'INBOX')
+[2025-08-18 21:17:03] Insertion du mail principal...
+[2025-08-18 21:17:03] SQL insert: INSERT INTO llx_mailboxmodule_mail
+        (message_id, subject, from_email, date_received, file_path, imap_mailbox, imap_uid, direction)
+        VALUES (
+            '<PA3PPFF7FDD5F7F0BBE6B5F6BC67148972AD031A@PA3PPFF7FDD5F7F.FRAP264.PROD.OUTLOOK.COM>',
+            'RE: LETTRE DE MISSION SOLIHA',
+            'm.beucler@certif-finances.fr',
+            '2025-08-18 14:20:45',
+            'custom/roundcubemodule/data/mails/RE LETTRE DE MISSION SOLIHA_1755551823.eml',
+            'INBOX',
+            161313,
+            'received'
+        )
+[2025-08-18 21:17:03] Mail inséré avec ID: 4
+[2025-08-18 21:17:03] Insertion dans mailboxmodule_mail_audit...
+[2025-08-18 21:17:03] SQL audit: INSERT INTO llx_mailboxmodule_mail_audit
+(fk_mail, message_id_full, from_header_full, to_header_full, cc_header_full, bcc_header_full,
+reply_to_header, subject_full, date_header, content_type, content_encoding,
+imap_server, imap_flags, message_size_bytes, has_attachments, attachment_count, attachment_list,
+has_html_content, has_plain_content, body_text_length, body_html_length,
+classification_status, confidence_score, date_created, entity)
+VALUES (
+    4,
+    '<PA3PPFF7FDD5F7F0BBE6B5F6BC67148972AD031A@PA3PPFF7FDD5F7F.FRAP264.PROD.OUTLOOK.COM>',
+    '\"Michel  Beucler\" <m.beucler@certif-finances.fr>',
+    '',
+    '',
+    '',
+    '',
+    'RE: LETTRE DE MISSION SOLIHA',
+    '2025-08-18 14:20:45',
+    'text/plain',
+    'UTF-8',
+    '',
+    '',
+    30978,
+    1,
+    1,
+    '[\"image001.jpg\"]',
+    0,
+    0,
+    0,
+    0,
+    'auto',
+    1,
+    '2025-08-18 21:17:03',
+    1
+)
+[2025-08-18 21:17:03] Audit inséré avec succès
+[2025-08-18 21:17:03] Traitement des pièces jointes...
+[2025-08-18 21:17:03] Pièces jointes traitées: 0
+[2025-08-18 21:17:03] Traitement des liaisons...
+[2025-08-18 21:17:03] Traitement lien: thirdparty ID 1090
+[2025-08-18 21:17:03] SQL vérification objet: SELECT rowid, nom as name FROM llx_societe WHERE rowid = 1090
+[2025-08-18 21:17:03] Objet trouvé: ACCENS Avocats
+[2025-08-18 21:17:03] SQL lien: INSERT INTO llx_mailboxmodule_mail_links
+                (fk_mail, target_type, target_id, target_name, date_created)
+                VALUES (
+                    4,
+                    'thirdparty',
+                    1090,
+                    'ACCENS Avocats',
+                    '2025-08-18 21:17:03'
+                )
+[2025-08-18 21:17:03] Lien créé avec succès
+[2025-08-18 21:17:03] Sauvegarde fichiers vers module thirdparty ID 1090
+[2025-08-18 21:17:03] Fichier EML copié: C:/doli_doc/AVOCATS/documents/thirdparty/1090/1755551823_RE LETTRE DE MISSION SOLIHA_1755551823.eml
+[2025-08-18 21:17:03] Fichier EML ajouté à ecm_files
+[2025-08-18 21:17:03] Pièce jointe copiée: C:/doli_doc/AVOCATS/documents/thirdparty/1090/1755551823_image001.jpg
+[2025-08-18 21:17:03] Pièce jointe ajoutée à ecm_files: image001.jpg
+[2025-08-18 21:17:03] Traitement lien: contact ID 251
+[2025-08-18 21:17:03] SQL vérification objet: SELECT rowid, CONCAT(COALESCE(firstname,''), ' ', COALESCE(lastname,'')) as name FROM llx_socpeople WHERE rowid = 251
+[2025-08-18 21:17:03] Objet trouvé: Roxane NAITALI
+[2025-08-18 21:17:03] SQL lien: INSERT INTO llx_mailboxmodule_mail_links
+                (fk_mail, target_type, target_id, target_name, date_created)
+                VALUES (
+                    4,
+                    'contact',
+                    251,
+                    'Roxane NAITALI',
+                    '2025-08-18 21:17:03'
+                )
+[2025-08-18 21:17:03] Lien créé avec succès
+[2025-08-18 21:17:03] Sauvegarde fichiers vers module contact ID 251
+[2025-08-18 21:17:03] Fichier EML copié: C:/doli_doc/AVOCATS/documents/contact/251/1755551823_RE LETTRE DE MISSION SOLIHA_1755551823.eml
+[2025-08-18 21:17:03] Fichier EML ajouté à ecm_files
+[2025-08-18 21:17:03] Pièce jointe copiée: C:/doli_doc/AVOCATS/documents/contact/251/1755551823_image001.jpg
+[2025-08-18 21:17:03] Pièce jointe ajoutée à ecm_files: image001.jpg
+[2025-08-18 21:17:03] Traitement lien: project ID 1345
+[2025-08-18 21:17:03] SQL vérification objet: SELECT rowid, title as name FROM llx_projet WHERE rowid = 1345
+[2025-08-18 21:17:03] Objet trouvé: ADPEP 64 - DPO
+[2025-08-18 21:17:03] SQL lien: INSERT INTO llx_mailboxmodule_mail_links
+                (fk_mail, target_type, target_id, target_name, date_created)
+                VALUES (
+                    4,
+                    'project',
+                    1345,
+                    'ADPEP 64 - DPO',
+                    '2025-08-18 21:17:03'
+                )
+[2025-08-18 21:17:03] Lien créé avec succès
+[2025-08-18 21:17:03] Sauvegarde fichiers vers module project ID 1345
+[2025-08-18 21:17:03] Fichier EML copié: C:/doli_doc/AVOCATS/documents/project/1345/1755551823_RE LETTRE DE MISSION SOLIHA_1755551823.eml
+[2025-08-18 21:17:03] Fichier EML ajouté à ecm_files
+[2025-08-18 21:17:03] Pièce jointe copiée: C:/doli_doc/AVOCATS/documents/project/1345/1755551823_image001.jpg
+[2025-08-18 21:17:03] Pièce jointe ajoutée à ecm_files: image001.jpg
+[2025-08-18 21:17:03] SUCCÈS: Mail UID=161313 enregistré avec succès et lié au tiers : ACCENS Avocats (sélectionné manuellement) (ID=1090). Fichier EML sauvegardé. Mail lié à 3 module(s) : thirdparty (ID: 1090 - ACCENS Avocats), contact (ID: 251 - Roxane NAITALI), project (ID: 1345 - ADPEP 64 - DPO)
+[2025-08-18 21:17:03] === FIN SAVE_MAILS DEBUG (MAILBOXMODULE) ===
+
+[2025-08-18 21:33:53] === DÉBUT SAVE_MAILS DEBUG (MAILBOXMODULE) ===
+[2025-08-18 21:33:53] Tentative de chargement de Dolibarr...
+[2025-08-18 21:33:53] Racine Dolibarr détectée: E:\wamp64\www\AVOCATS
+[2025-08-18 21:33:53] Tentative de chargement: E:\wamp64\www\AVOCATS/main.inc.php
+[2025-08-18 21:33:53] main.inc.php chargé avec succès
+[2025-08-18 21:33:53] Dolibarr version: 20.0.4
+[2025-08-18 21:33:53] Variables globales Dolibarr disponibles
+[2025-08-18 21:33:53] Connexion DB OK
+[2025-08-18 21:33:53] Input reçu: {"uid":"161313","mbox":"INBOX","fk_soc":null,"rc_user_email":"pierre.naitali@accens-avocats.com","from":"\"Michel  Beucler\" <m.beucler@certif-finances.fr>","subject":"RE: LETTRE DE MISSION SOLIHA","m...
+[2025-08-18 21:33:53] JSON décodé correctement
+[2025-08-18 21:33:53] UID trouvé: 161313
+[2025-08-18 21:33:53] Données extraites - Subject: RE: LETTRE DE MISSION SOLIHA, From: "Michel  Beucler" <m.beucler@certif-finances.fr>
+[2025-08-18 21:33:53] Nombre de liens: 2
+[2025-08-18 21:33:53] Email expéditeur validé: m.beucler@certif-finances.fr
+[2025-08-18 21:33:53] Vérification des tables mailboxmodule...
+[2025-08-18 21:33:53] Table llx_mailboxmodule_mail OK
+[2025-08-18 21:33:53] Table llx_mailboxmodule_attachment OK
+[2025-08-18 21:33:53] Table llx_mailboxmodule_mail_links OK
+[2025-08-18 21:33:53] Table llx_mailboxmodule_mail_audit OK
+[2025-08-18 21:33:53] Sauvegarde du fichier EML...
+[2025-08-18 21:33:53] Répertoire EML: E:/wamp64/www/AVOCATS/custom/roundcubemodule/data/mails/
+[2025-08-18 21:33:53] Fichier EML: E:/wamp64/www/AVOCATS/custom/roundcubemodule/data/mails/RE LETTRE DE MISSION SOLIHA_1755552833.eml
+[2025-08-18 21:33:53] Fichier EML sauvegardé
+[2025-08-18 21:33:53] Recherche du tiers...
+[2025-08-18 21:33:53] SQL tiers: SELECT rowid, nom FROM llx_societe WHERE email = 'm.beucler@certif-finances.fr'
+[2025-08-18 21:33:53] Aucun tiers trouvé par email
+[2025-08-18 21:33:53] Vérification doublons...
+[2025-08-18 21:33:53] SQL check: SELECT rowid FROM llx_mailboxmodule_mail 
+                  WHERE message_id = '<PA3PPFF7FDD5F7F0BBE6B5F6BC67148972AD031A@PA3PPFF7FDD5F7F.FRAP264.PROD.OUTLOOK.COM>' OR (imap_uid = 161313 AND imap_mailbox = 'INBOX')
+[2025-08-18 21:33:53] Mail déjà existant avec ID 4
+[2025-08-18 21:43:21] === DÉBUT SAVE_MAILS DEBUG (MAILBOXMODULE) ===
+[2025-08-18 21:43:21] Tentative de chargement de Dolibarr...
+[2025-08-18 21:43:21] Racine Dolibarr détectée: E:\wamp64\www\AVOCATS
+[2025-08-18 21:43:21] Tentative de chargement: E:\wamp64\www\AVOCATS/main.inc.php
+[2025-08-18 21:43:22] main.inc.php chargé avec succès
+[2025-08-18 21:43:22] Dolibarr version: 20.0.4
+[2025-08-18 21:43:22] Variables globales Dolibarr disponibles
+[2025-08-18 21:43:22] Connexion DB OK
+[2025-08-18 21:43:22] Input reçu: {"uid":"161313","mbox":"INBOX","fk_soc":null,"rc_user_email":"pierre.naitali@accens-avocats.com","from":"\"Michel  Beucler\" <m.beucler@certif-finances.fr>","subject":"RE: LETTRE DE MISSION SOLIHA","m...
+[2025-08-18 21:43:22] JSON décodé correctement
+[2025-08-18 21:43:22] UID trouvé: 161313
+[2025-08-18 21:43:22] Données extraites - Subject: RE: LETTRE DE MISSION SOLIHA, From: "Michel  Beucler" <m.beucler@certif-finances.fr>
+[2025-08-18 21:43:22] Nombre de liens: 2
+[2025-08-18 21:43:22] Email expéditeur validé: m.beucler@certif-finances.fr
+[2025-08-18 21:43:22] Vérification des tables mailboxmodule...
+[2025-08-18 21:43:22] Table llx_mailboxmodule_mail OK
+[2025-08-18 21:43:22] Table llx_mailboxmodule_attachment OK
+[2025-08-18 21:43:22] Table llx_mailboxmodule_mail_links OK
+[2025-08-18 21:43:22] Table llx_mailboxmodule_mail_audit OK
+[2025-08-18 21:43:22] Sauvegarde du fichier EML...
+[2025-08-18 21:43:22] Répertoire EML: E:/wamp64/www/AVOCATS/custom/roundcubemodule/data/mails/
+[2025-08-18 21:43:22] Fichier EML: E:/wamp64/www/AVOCATS/custom/roundcubemodule/data/mails/RE LETTRE DE MISSION SOLIHA_1755553402.eml
+[2025-08-18 21:43:22] Fichier EML sauvegardé
+[2025-08-18 21:43:22] Recherche du tiers...
+[2025-08-18 21:43:22] SQL tiers: SELECT rowid, nom FROM llx_societe WHERE email = 'm.beucler@certif-finances.fr'
+[2025-08-18 21:43:22] Aucun tiers trouvé par email
+[2025-08-18 21:43:22] Vérification doublons...
+[2025-08-18 21:43:22] SQL check: SELECT rowid FROM llx_mailboxmodule_mail 
+                  WHERE message_id = '<PA3PPFF7FDD5F7F0BBE6B5F6BC67148972AD031A@PA3PPFF7FDD5F7F.FRAP264.PROD.OUTLOOK.COM>' OR (imap_uid = 161313 AND imap_mailbox = 'INBOX')
+[2025-08-18 21:43:22] Mail déjà existant avec ID 4
+[2025-08-18 23:23:34] === DÉBUT SAVE_MAILS DEBUG (MAILBOXMODULE) ===
+[2025-08-18 23:23:34] Mail déjà existant avec ID 3
+[2025-08-18 23:33:51] === DÉBUT SAVE_MAILS DEBUG (MAILBOXMODULE) ===
+[2025-08-18 23:33:52] Mail existant ID=4
+[2025-08-20 23:24:35] === DÉBUT SAVE_MAILS DEBUG (MAILBOXMODULE) ===
+[2025-08-20 23:24:35] === FIN SAVE_MAILS DEBUG (MAILBOXMODULE) ===
+
+[2025-08-20 23:25:58] === DÉBUT SAVE_MAILS DEBUG (MAILBOXMODULE) ===
+[2025-08-20 23:25:58] Mail existant ID=5
+[2025-08-20 23:26:05] === DÉBUT SAVE_MAILS DEBUG (MAILBOXMODULE) ===
+[2025-08-20 23:26:05] Mail existant ID=5
+[2025-08-20 23:26:36] === DÉBUT SAVE_MAILS DEBUG (MAILBOXMODULE) ===
+[2025-08-20 23:26:36] Mail existant ID=5
+[2025-08-20 23:26:39] === DÉBUT SAVE_MAILS DEBUG (MAILBOXMODULE) ===
+[2025-08-20 23:26:39] Mail existant ID=5
+[2025-08-20 23:26:41] === DÉBUT SAVE_MAILS DEBUG (MAILBOXMODULE) ===
+[2025-08-20 23:26:41] Mail existant ID=5
+[2025-08-21 07:22:46] === DÉBUT SAVE_MAILS DEBUG (MAILBOXMODULE) ===
+[2025-08-21 07:22:46] Mail existant ID=5
+[2025-08-21 07:22:52] === DÉBUT SAVE_MAILS DEBUG (MAILBOXMODULE) ===
+[2025-08-21 07:22:52] === FIN SAVE_MAILS DEBUG (MAILBOXMODULE) ===
+

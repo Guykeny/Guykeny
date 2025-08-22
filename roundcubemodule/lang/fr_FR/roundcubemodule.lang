@@ -1,0 +1,125 @@
+<?php
+// Fichier: htdocs/custom/roundcubemodule/langs/fr_FR/roundcubemodule.lang
+
+# Module
+Module104010Name = Module Roundcube
+Module104010Desc = Intégration du webmail Roundcube dans Dolibarr avec gestion des droits
+
+# Permissions
+Permission104010001 = Utiliser le webmail Roundcube
+Permission104010002 = Gérer ses comptes webmail
+Permission104010003 = Administrer tous les comptes webmail
+Permission104010004 = Configurer le module Roundcube
+
+# Menu
+WebmailRoundcube = Webmail
+MyWebmailAccounts = Mes comptes
+WebmailConfiguration = Configuration
+WebmailManagement = Gestion des comptes
+
+# General
+WebmailAccount = Compte webmail
+WebmailAccounts = Comptes webmail
+AddAccount = Ajouter un compte
+EditAccount = Modifier le compte
+DeleteAccount = Supprimer le compte
+TestConnection = Tester la connexion
+OpenRoundcube = Ouvrir Roundcube
+NoWebmailAccounts = Aucun compte webmail configuré
+
+# Account fields
+AccountName = Nom du compte
+EmailAddress = Adresse email
+Password = Mot de passe
+ImapServer = Serveur IMAP
+ImapPort = Port IMAP
+ImapEncryption = Chiffrement IMAP
+SmtpServer = Serveur SMTP
+SmtpPort = Port SMTP
+SmtpEncryption = Chiffrement SMTP
+DefaultAccount = Compte par défaut
+ActiveAccount = Compte actif
+Signature = Signature
+Logo = Logo
+
+# Status
+AccountActive = Actif
+AccountInactive = Inactif
+AccountDefault = Défaut
+LastConnection = Dernière connexion
+ConnectionCount = Nombre de connexions
+ErrorCount = Erreurs
+NoErrors = Aucune erreur
+
+# Actions
+ConnectToWebmail = Se connecter au webmail
+TestImapConnection = Tester la connexion IMAP
+ManageWebmailAccounts = Gérer les comptes webmail
+ConfigureModule = Configurer le module
+ResetErrors = Réinitialiser les erreurs
+ToggleActive = Activer/Désactiver
+
+# Messages
+AccountCreatedSuccessfully = Compte créé avec succès
+AccountUpdatedSuccessfully = Compte modifié avec succès
+AccountDeletedSuccessfully = Compte supprimé avec succès
+ConnectionSuccessful = Connexion réussie
+ConnectionFailed = Connexion échouée
+NoRightsToAccessWebmail = Vous n'avez pas les droits pour accéder au webmail
+NoRightsToManageAccounts = Vous n'avez pas les droits pour gérer les comptes
+NoRightsToAdminAccounts = Vous n'avez pas les droits pour administrer les comptes
+NoRightsToConfigureModule = Vous n'avez pas les droits pour configurer le module
+
+# Configuration
+GeneralSettings = Paramètres généraux
+DefaultPreferences = Préférences par défaut
+AutologinSettings = Configuration autologin
+InstallationComplete = Installation complète
+TestConfiguration = Test de configuration
+RoundcubeUrl = URL Roundcube
+EnableAutologin = Activer la connexion automatique
+AutoRedirect = Redirection automatique
+RedirectDelay = Délai de redirection
+MenuAutologin = Connexion automatique depuis le menu
+
+# Preferences
+Language = Langue
+Timezone = Fuseau horaire
+Theme = Thème
+DateFormat = Format de date
+TimeFormat = Format d'heure
+ComposeMode = Mode de composition
+ReplyMode = Mode de réponse
+DraftAutosave = Sauvegarde automatique des brouillons
+AutoMarkRead = Marquer comme lu automatiquement
+DisplayNext = Afficher le message suivant
+MailRefresh = Rafraîchissement automatique
+SentFolder = Dossier des envoyés
+TrashFolder = Dossier corbeille
+DraftsFolder = Dossier brouillons
+SpamFolder = Dossier spam
+
+# Installation
+DatabaseConnection = Connexion base de données
+RoundcubeTables = Tables Roundcube
+WebmailTable = Table comptes webmail
+RoundcubeConfig = Configuration Roundcube
+LogoStructure = Structure logos
+InstallationSuccessful = Installation réussie
+InstallationFailed = Échec de l'installation
+ComponentMissing = Composant manquant
+ComponentOK = Composant OK
+
+# Statistics
+TotalAccounts = Total comptes
+ActiveAccounts = Comptes actifs
+ErrorAccounts = Comptes en erreur
+UsersWithAccounts = Utilisateurs avec comptes
+
+# Help
+InfoWebmailHelp = Informations d'aide pour le webmail
+GmailAppPassword = Pour Gmail, utilisez un mot de passe d'application
+OutlookImapEnable = Pour Outlook, activez l'accès IMAP dans vos paramètres
+TestConnectionHelp = Testez la connexion pour vérifier les paramètres
+AutoDetectHelp = L'auto-détection configure automatiquement les serveurs courants
+?>
